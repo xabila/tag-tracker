@@ -139,7 +139,7 @@
                 <span class="lang-en">Core Features</span>
                 <span class="lang-fr">Fonctionnalités Clés</span>
             </h3>
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
                 <!-- Feature 1 -->
                 <div class="bg-brand-dark p-6 rounded-lg text-center">
                     <img id="feature-img-1" src="img/ZeroSceen-EN.jpg" alt="NFC Scan Demo" class="rounded-md mb-4">
@@ -186,6 +186,18 @@
                     <p class="text-gray-400 block-element">
                         <span class="lang-en">Visualize your progress with insightful charts and stats.</span>
                         <span class="lang-fr">Visualisez vos progrès avec des graphiques et statistiques.</span>
+                    </p>
+                </div>
+                <!-- Feature 5 -->
+                <div class="bg-brand-dark p-6 rounded-lg text-center">
+                    <img id="feature-img-5" src="img/FiveSceen-EN.jpg" alt="Home Screen Widgets" class="rounded-md mb-4">
+                    <h4 class="text-xl font-bold mb-2 block-element">
+                        <span class="lang-en">Home Screen Widgets</span>
+                        <span class="lang-fr">Widgets Écran d'Accueil</span>
+                    </h4>
+                    <p class="text-gray-400 block-element">
+                        <span class="lang-en">Track your habits directly from your home screen.</span>
+                        <span class="lang-fr">Suivez vos habitudes directement depuis votre écran d'accueil.</span>
                     </p>
                 </div>
             </div>
@@ -265,6 +277,9 @@
 
                 const img4 = document.getElementById('feature-img-4');
                 if (img4) img4.src = 'img/FourSceen-FR.jpg';
+
+                const img5 = document.getElementById('feature-img-5');
+                if (img5) img5.src = 'img/FiveSceen-FR.jpg';
 
             } else {
                 body.classList.add('is-lang-en');
