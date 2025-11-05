@@ -126,6 +126,13 @@
         <p class="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl mx-auto block-element lang-en">TagTrack turns everyday objects into habit trackers. Tap an NFC sticker, instantly log your habit, and watch your streaks grow. No friction. Pure feedback.</p>
         <p class="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl mx-auto block-element lang-fr">TagTrack est l'app de suivi d'habitudes nouvelle génération conçu pour l'action instantanée. Placez des autocollants NFC sur vos objets du quotidien et enregistrez vos habitudes d'un simple geste.</p>
         
+        <!-- Video Demo -->
+        <div class="mb-8 max-w-xs mx-auto">
+            <video id="intro-video" class="rounded-lg shadow-2xl w-full" autoplay loop muted playsinline>
+                <source src="img/IntroEN-V2.mp4" type="video/mp4">
+            </video>
+        </div>
+        
         <a href="https://apps.apple.com/app/id6754224455" target="_blank" class="bg-neon-pink text-white font-bold py-3 px-8 rounded-full hover:bg-neon-pink-light transition duration-300 inline-block">
             <span class="lang-en">Download on the App Store</span>
             <span class="lang-fr">Télécharger dans l'App Store</span>
@@ -139,7 +146,7 @@
                 <span class="lang-en">Core Features</span>
                 <span class="lang-fr">Fonctionnalités Clés</span>
             </h3>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-8">
                 <!-- Feature 1 -->
                 <div class="bg-brand-dark p-6 rounded-lg text-center">
                     <img id="feature-img-1" src="img/ZeroSceen-EN.jpg" alt="NFC Scan Demo" class="rounded-md mb-4">
@@ -198,6 +205,18 @@
                     <p class="text-gray-400 block-element">
                         <span class="lang-en">Track your habits directly from your home screen.</span>
                         <span class="lang-fr">Suivez vos habitudes directement depuis votre écran d'accueil.</span>
+                    </p>
+                </div>
+                <!-- Feature 6 -->
+                <div class="bg-brand-dark p-6 rounded-lg text-center">
+                    <img id="feature-img-6" src="img/SixScreen-EN.jpg" alt="QR Code Scanning" class="rounded-md mb-4">
+                    <h4 class="text-xl font-bold mb-2 block-element">
+                        <span class="lang-en">QR Code Support</span>
+                        <span class="lang-fr">Support QR Code</span>
+                    </h4>
+                    <p class="text-gray-400 block-element">
+                        <span class="lang-en">No NFC? Scan QR codes to track your habits anywhere.</span>
+                        <span class="lang-fr">Pas de NFC ? Scannez des QR codes pour suivre vos habitudes partout.</span>
                     </p>
                 </div>
             </div>
@@ -266,6 +285,14 @@
             if (userLang.startsWith('fr')) {
                 body.classList.add('is-lang-fr');
                 
+                // Update video
+                const video = document.getElementById('intro-video');
+                if (video) {
+                    video.querySelector('source').src = 'img/IntroFR-V2.mp4';
+                    video.load();
+                }
+                
+                // Update feature images
                 const img1 = document.getElementById('feature-img-1');
                 if (img1) img1.src = 'img/ZeroSceen-FR.jpg';
 
@@ -280,6 +307,9 @@
 
                 const img5 = document.getElementById('feature-img-5');
                 if (img5) img5.src = 'img/FiveSceen-FR.jpg';
+
+                const img6 = document.getElementById('feature-img-6');
+                if (img6) img6.src = 'img/SixScreen-FR.jpg';
 
             } else {
                 body.classList.add('is-lang-en');
