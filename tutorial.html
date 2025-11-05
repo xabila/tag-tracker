@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HKNZ7LV3MC"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-HKNZ7LV3MC');
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#1A1A1A">
+    <title>Tutorial – TagTrack</title>
+    <meta name="description" content="Learn how to use TagTrack with our step-by-step video tutorial.">
+    <link rel="canonical" href="https://tag-track.app/tutorial.html">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: #1A1A1A;
+            color: white;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        /* Header with back button */
+        .header {
+            padding: 16px;
+            background: rgba(26, 26, 26, 0.95);
+            backdrop-filter: blur(10px);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .back-button {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            border: none;
+            color: white;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        
+        .back-button:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+        
+        .header h1 {
+            font-size: 24px;
+            font-weight: 600;
+            flex: 1;
+        }
+        
+        /* Main content container */
+        .content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+            max-width: 1400px;
+            margin: 0 auto;
+            width: 100%;
+        }
+        
+        /* Description section */
+        .description {
+            text-align: center;
+            max-width: 600px;
+            margin-bottom: 32px;
+        }
+        
+        .description h2 {
+            font-size: 32px;
+            margin-bottom: 12px;
+            background: linear-gradient(135deg, #FB34FF, #66F6FF);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .description p {
+            color: #aaa;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        
+        /* Video container */
+        .video-wrapper {
+            width: 100%;
+            max-width: 500px;
+            position: relative;
+            background: #000;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 32px rgba(251, 52, 255, 0.2);
+        }
+        
+        /* Aspect ratio container for portrait video */
+        .video-container {
+            position: relative;
+            padding-bottom: 177.78%; /* 9:16 aspect ratio for portrait */
+            background: #000;
+        }
+        
+        video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        
+        /* Custom controls overlay */
+        .custom-controls {
+            position: absolute;
+            bottom: 60px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 12px;
+            z-index: 2;
+            padding: 12px;
+            background: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(10px);
+            border-radius: 50px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+        }
+        
+        .control-btn {
+            width: 52px;
+            height: 52px;
+            border-radius: 50%;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            line-height: 1;
+        }
+        
+        .control-btn:hover {
+            background: rgba(251, 52, 255, 0.3);
+            border-color: #FB34FF;
+            transform: scale(1.05);
+        }
+        
+        .control-btn:active {
+            transform: scale(0.95);
+        }
+        
+        .control-icon {
+            font-size: 18px;
+            margin-bottom: 2px;
+        }
+        
+        .control-label {
+            font-size: 10px;
+            opacity: 0.8;
+        }
+        
+        /* Loading state */
+        .loading {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            z-index: 1;
+        }
+        
+        .spinner {
+            width: 48px;
+            height: 48px;
+            border: 4px solid rgba(255, 255, 255, 0.1);
+            border-top-color: #FB34FF;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 16px;
+        }
+        
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        
+        .lang-label {
+            display: none;
+        }
+        
+        .is-lang-fr .lang-fr { display: inline; }
+        .is-lang-en .lang-en { display: inline; }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .content {
+                padding: 24px 16px;
+            }
+            
+            .description h2 {
+                font-size: 24px;
+            }
+            
+            .description p {
+                font-size: 16px;
+            }
+            
+            .video-wrapper {
+                max-width: 100%;
+            }
+        }
+        
+        /* Mobile app mode - full screen */
+        @media (max-width: 480px) and (orientation: portrait) {
+            body {
+                overflow: hidden;
+            }
+            
+            .content {
+                padding: 16px;
+                justify-content: center;
+            }
+            
+            .description {
+                display: none;
+            }
+            
+            .video-wrapper {
+                max-width: 100%;
+                border-radius: 0;
+                box-shadow: none;
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+            }
+            
+            .video-container {
+                flex: 1;
+                padding-bottom: 0;
+                height: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <button class="back-button" onclick="goBack()">←</button>
+        <h1>
+            <span class="lang-label lang-en">Tutorial</span>
+            <span class="lang-label lang-fr">Tutoriel</span>
+        </h1>
+    </div>
+    
+    <div class="content">
+        <div class="description">
+            <h2>
+                <span class="lang-label lang-en">Learn TagTrack</span>
+                <span class="lang-label lang-fr">Apprendre TagTrack</span>
+            </h2>
+            <p>
+                <span class="lang-label lang-en">Watch this step-by-step video guide to master TagTrack and start building better habits with NFC technology.</span>
+                <span class="lang-label lang-fr">Regardez ce guide vidéo étape par étape pour maîtriser TagTrack et commencer à construire de meilleures habitudes avec la technologie NFC.</span>
+            </p>
+        </div>
+        
+        <div class="video-wrapper">
+            <div class="video-container">
+                <div class="loading" id="loading">
+                    <div class="spinner"></div>
+                    <p class="lang-label lang-en">Loading tutorial...</p>
+                    <p class="lang-label lang-fr">Chargement du tutoriel...</p>
+                </div>
+                <video id="tutorial-video" controls autoplay muted playsinline preload="auto" style="display: none;">
+                    <source src="img/TutoTT-EN.mp4" type="video/mp4">
+                </video>
+                
+                <!-- Custom skip controls -->
+                <div class="custom-controls" id="custom-controls" style="display: none;">
+                    <button class="control-btn" onclick="skipBackward()" title="Rewind 10 seconds">
+                        <span class="control-icon">⏪</span>
+                        <span class="control-label">-10s</span>
+                    </button>
+                    <button class="control-btn" onclick="skipForward()" title="Forward 10 seconds">
+                        <span class="control-icon">⏩</span>
+                        <span class="control-label">+10s</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Detect language
+        const userLang = navigator.language || navigator.userLanguage;
+        const isFrench = userLang.startsWith('fr');
+        
+        // Apply language class
+        document.body.classList.add(isFrench ? 'is-lang-fr' : 'is-lang-en');
+        
+        // Set video source based on language
+        const video = document.getElementById('tutorial-video');
+        const videoSource = video.querySelector('source');
+        videoSource.src = isFrench ? 'img/TutoTT-FR.mp4' : 'img/TutoTT-EN.mp4';
+        
+        // Show video when loaded
+        video.addEventListener('loadedmetadata', function() {
+            document.getElementById('loading').style.display = 'none';
+            video.style.display = 'block';
+            document.getElementById('custom-controls').style.display = 'flex';
+        });
+        
+        // Reload video with correct source
+        video.load();
+        
+        // Skip controls
+        function skipBackward() {
+            const video = document.getElementById('tutorial-video');
+            video.currentTime = Math.max(0, video.currentTime - 10);
+        }
+        
+        function skipForward() {
+            const video = document.getElementById('tutorial-video');
+            video.currentTime = Math.min(video.duration, video.currentTime + 10);
+        }
+        
+        // Back button handler
+        function goBack() {
+            // If opened from app, try to close
+            if (window.history.length > 1) {
+                window.history.back();
+            } else {
+                // Fallback to home
+                window.location.href = 'index.html';
+            }
+        }
+        
+        // Track video plays
+        video.addEventListener('play', function() {
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'video_play', {
+                    'event_category': 'Tutorial',
+                    'event_label': isFrench ? 'FR' : 'EN'
+                });
+            }
+        });
+    </script>
+</body>
+</html>

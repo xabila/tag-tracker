@@ -2,8 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://tag-track.app/</loc>
-    <lastmod>2025-10-24</lastmod>
+    <lastmod>2025-11-05</lastmod>
     <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://tag-track.app/tutorial.html</loc>
+    <lastmod>2025-11-05</lastmod>
+    <priority>0.90</priority>
   </url>
   <url>
     <loc>https://tag-track.app/privacy.html</loc>
