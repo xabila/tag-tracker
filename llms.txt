@@ -1,0 +1,30 @@
+# TagTrack
+
+TagTrack is a next-generation habit tracker built for instant action using NFC technology.
+It allows users to place NFC stickers on everyday objects and tap them to log habits instantly.
+
+## Core Features
+1. **Instant NFC Scanning**: Log habits with a single tap.
+2. **Habit Library**: Presets and custom habits.
+3. **Gamification**: XP, badges, and streaks.
+4. **Analytics**: Charts and statistics.
+5. **Widgets**: Home screen tracking.
+6. **QR Code Support**: Alternative to NFC.
+
+## Platforms
+- iOS (App Store)
+
+## Pricing
+- Free: 3 habits, basic tracking.
+- Premium: €9.99/year, unlimited habits, full features.
+
+## Languages
+- English (EN)
+- French (FR)
+- Spanish (ES)
+- Portuguese (PT)
+- German (DE)
+
+## Website
+- URL: https://tag-track.app
+- Tech Stack: HTML, Tailwind CSS, Vanilla JS

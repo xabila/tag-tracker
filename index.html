@@ -64,12 +64,18 @@
     </script>
     
     <style>
-        .lang-fr, .lang-en { display: none; }
+        .lang-fr, .lang-en, .lang-es, .lang-pt, .lang-de { display: none; }
         .is-lang-fr .lang-fr { display: inline; }
         .is-lang-en .lang-en { display: inline; }
+        .is-lang-es .lang-es { display: inline; }
+        .is-lang-pt .lang-pt { display: inline; }
+        .is-lang-de .lang-de { display: inline; }
         /* Handle block elements that might be used */
         .is-lang-fr .lang-fr.block-element { display: block; }
         .is-lang-en .lang-en.block-element { display: block; }
+        .is-lang-es .lang-es.block-element { display: block; }
+        .is-lang-pt .lang-pt.block-element { display: block; }
+        .is-lang-de .lang-de.block-element { display: block; }
     </style>
 
     <script type="application/ld+json">
@@ -108,14 +114,23 @@
             <a href="#features" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
                 <span class="lang-en">Features</span>
                 <span class="lang-fr">Fonctionnalités</span>
+                <span class="lang-es">Características</span>
+                <span class="lang-pt">Funcionalidades</span>
+                <span class="lang-de">Funktionen</span>
             </a>
             <a href="#pricing" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
                 <span class="lang-en">Pricing</span>
                 <span class="lang-fr">Tarifs</span>
+                <span class="lang-es">Precios</span>
+                <span class="lang-pt">Preços</span>
+                <span class="lang-de">Preise</span>
             </a>
             <a href="tutorial.html" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
                 <span class="lang-en">Tutorial</span>
                 <span class="lang-fr">Tutoriel</span>
+                <span class="lang-es">Tutorial</span>
+                <span class="lang-pt">Tutorial</span>
+                <span class="lang-de">Tutorial</span>
             </a>
             <a href="support.html" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Support</a>
         </nav>
@@ -126,21 +141,29 @@
         <h2 class="text-4xl md:text-6xl font-bold font-display leading-tight mb-4">
             <span class="lang-en">Tap to build better habits.</span>
             <span class="lang-fr">Routines en un scan.</span>
+            <span class="lang-es">Rutinas en un toque.</span>
+            <span class="lang-pt">Rotinas num toque.</span>
+            <span class="lang-de">Routinen mit einem Scan.</span>
         </h2>
         <p class="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl mx-auto block-element lang-en">TagTrack turns everyday objects into habit trackers. Tap an NFC sticker, instantly log your habit, and watch your streaks grow. No friction. Pure feedback.</p>
         <p class="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl mx-auto block-element lang-fr">TagTrack est l'app de suivi d'habitudes nouvelle génération conçu pour l'action instantanée. Placez des autocollants NFC sur vos objets du quotidien et enregistrez vos habitudes d'un simple geste.</p>
+        <p class="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl mx-auto block-element lang-es">TagTrack convierte objetos cotidianos en seguidores de hábitos. Escanea una etiqueta NFC, registra tu hábito al instante y observa cómo crecen tus rachas.</p>
+        <p class="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl mx-auto block-element lang-pt">TagTrack transforma objetos cotidianos em rastreadores. Escaneie uma etiqueta NFC, registre o hábito num instante e veja suas sequências crescerem.</p>
+        <p class="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl mx-auto block-element lang-de">TagTrack macht Alltagsgegenstände zu Trackern. Scannen Sie einen NFC-Sticker, loggen Sie Ihre Gewohnheit sofort und beobachten Sie Ihren Fortschritt.</p>
         
-        <!-- Video Demo -->
-        <div class="mb-8 max-w-xs mx-auto">
-            <video id="intro-video" class="rounded-lg shadow-2xl w-full" autoplay loop muted playsinline>
-                <source src="img/IntroEN-V2.mp4" type="video/mp4">
-            </video>
-        </div>
-        
-        <a href="https://apps.apple.com/app/id6754224455" target="_blank" class="bg-neon-pink text-white font-bold py-3 px-8 rounded-full hover:bg-neon-pink-light transition duration-300 inline-block">
+        <a href="https://apps.apple.com/app/id6754224455" target="_blank" class="bg-neon-pink text-white font-bold py-3 px-8 rounded-full hover:bg-neon-pink-light transition duration-300 inline-block mb-12">
             <span class="lang-en">Download on the App Store</span>
             <span class="lang-fr">Télécharger dans l'App Store</span>
+            <span class="lang-es">Descargar en el App Store</span>
+            <span class="lang-pt">Baixar na App Store</span>
+            <span class="lang-de">Laden im App Store</span>
         </a>
+
+        <!-- Mascots -->
+        <div class="flex justify-center gap-12 items-center">
+             <img src="img/tagtrack_coffee.png" alt="Mascot Coffee" class="h-32 w-auto animate-bounce" style="animation-duration: 3s;">
+             <img src="img/tagtrack_qrcode.png" alt="Mascot QR" class="h-32 w-auto animate-pulse" style="animation-duration: 4s;">
+        </div>
     </main>
 
     <!-- Features Section -->
@@ -149,6 +172,9 @@
             <h3 class="text-3xl font-bold text-center mb-12">
                 <span class="lang-en">Core Features</span>
                 <span class="lang-fr">Fonctionnalités Clés</span>
+                <span class="lang-es">Características Principales</span>
+                <span class="lang-pt">Principais Recursos</span>
+                <span class="lang-de">Hauptfunktionen</span>
             </h3>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-8">
                 <!-- Feature 1 -->
@@ -157,10 +183,16 @@
                     <h4 class="text-xl font-bold mb-2 block-element">
                         <span class="lang-en">Instant NFC Scanning</span>
                         <span class="lang-fr">Scan NFC Instantané</span>
+                        <span class="lang-es">Escaneo NFC Instantáneo</span>
+                        <span class="lang-pt">Escaneamento NFC Instantâneo</span>
+                        <span class="lang-de">Sofortiger NFC-Scan</span>
                     </h4>
                     <p class="text-gray-400 block-element">
                         <span class="lang-en">One tap = instant habit log. No forms, no input screens.</span>
                         <span class="lang-fr">Un scan = un suivi. Simple et rapide.</span>
+                        <span class="lang-es">Un toque = registro instantáneo. Sin formularios.</span>
+                        <span class="lang-pt">Um toque = registro instantâneo. Sem formulários.</span>
+                        <span class="lang-de">Ein Tippen = sofortiges Protokoll. Keine Formulare.</span>
                     </p>
                 </div>
                 <!-- Feature 2 -->
@@ -169,10 +201,16 @@
                     <h4 class="text-xl font-bold mb-2 block-element">
                         <span class="lang-en">Habit Library</span>
                         <span class="lang-fr">Bibliothèque d'Habitudes</span>
+                        <span class="lang-es">Biblioteca de Hábitos</span>
+                        <span class="lang-pt">Biblioteca de Hábitos</span>
+                        <span class="lang-de">Gewohnheitsbibliothek</span>
                     </h4>
                     <p class="text-gray-400 block-element">
                         <span class="lang-en">Choose from presets or create your own custom habits.</span>
                         <span class="lang-fr">Choisissez des habitudes prêtes à l'emploi ou créez les vôtres.</span>
+                        <span class="lang-es">Elige preajustes o crea los tuyos.</span>
+                        <span class="lang-pt">Escolha predefinições ou crie as suas.</span>
+                        <span class="lang-de">Wählen Sie Vorlagen oder erstellen Sie eigene.</span>
                     </p>
                 </div>
                 <!-- Feature 3 -->
@@ -181,10 +219,16 @@
                     <h4 class="text-xl font-bold mb-2 block-element">
                         <span class="lang-en">Gamification System</span>
                         <span class="lang-fr">Système de Gamification</span>
+                        <span class="lang-es">Gamificación</span>
+                        <span class="lang-pt">Gamificação</span>
+                        <span class="lang-de">Gamification</span>
                     </h4>
                     <p class="text-gray-400 block-element">
                         <span class="lang-en">Earn XP, unlock badges, and build streaks to stay motivated.</span>
                         <span class="lang-fr">Gagnez des points, débloquez des badges et suivez vos séries.</span>
+                        <span class="lang-es">Gana XP, desbloquea insignias y rachas.</span>
+                        <span class="lang-pt">Ganhe XP, desbloqueie emblemas e sequências.</span>
+                        <span class="lang-de">Sammeln Sie XP und Abzeichen.</span>
                     </p>
                 </div>
                 <!-- Feature 4 -->
@@ -193,10 +237,16 @@
                     <h4 class="text-xl font-bold mb-2 block-element">
                         <span class="lang-en">Analytics Dashboard</span>
                         <span class="lang-fr">Tableau de Bord Analytique</span>
+                        <span class="lang-es">Panel de Análisis</span>
+                        <span class="lang-pt">Painel de Análise</span>
+                        <span class="lang-de">Analyse-Dashboard</span>
                     </h4>
                     <p class="text-gray-400 block-element">
                         <span class="lang-en">Visualize your progress with insightful charts and stats.</span>
                         <span class="lang-fr">Visualisez vos progrès avec des graphiques et statistiques.</span>
+                        <span class="lang-es">Visualiza tu progreso con gráficos.</span>
+                        <span class="lang-pt">Visualize seu progresso com gráficos.</span>
+                        <span class="lang-de">Visualisieren Sie Ihren Fortschritt.</span>
                     </p>
                 </div>
                 <!-- Feature 5 -->
@@ -205,10 +255,16 @@
                     <h4 class="text-xl font-bold mb-2 block-element">
                         <span class="lang-en">Home Screen Widgets</span>
                         <span class="lang-fr">Widgets Écran d'Accueil</span>
+                        <span class="lang-es">Widgets de Pantalla</span>
+                        <span class="lang-pt">Widgets da Tela</span>
+                        <span class="lang-de">Homescreen-Widgets</span>
                     </h4>
                     <p class="text-gray-400 block-element">
                         <span class="lang-en">Track your habits directly from your home screen.</span>
                         <span class="lang-fr">Suivez vos habitudes directement depuis votre écran d'accueil.</span>
+                        <span class="lang-es">Sigue tus hábitos desde la pantalla de inicio.</span>
+                        <span class="lang-pt">Acompanhe seus hábitos da tela inicial.</span>
+                        <span class="lang-de">Tracken Sie direkt vom Startbildschirm.</span>
                     </p>
                 </div>
                 <!-- Feature 6 -->
@@ -217,12 +273,36 @@
                     <h4 class="text-xl font-bold mb-2 block-element">
                         <span class="lang-en">QR Code Support</span>
                         <span class="lang-fr">Support QR Code</span>
+                        <span class="lang-es">Soporte Código QR</span>
+                        <span class="lang-pt">Suporte Código QR</span>
+                        <span class="lang-de">QR-Code-Support</span>
                     </h4>
                     <p class="text-gray-400 block-element">
                         <span class="lang-en">No NFC? Scan QR codes to track your habits anywhere.</span>
                         <span class="lang-fr">Pas de NFC ? Scannez des QR codes pour suivre vos habitudes partout.</span>
+                        <span class="lang-es">¿Sin NFC? Escanea códigos QR.</span>
+                        <span class="lang-pt">Sem NFC? Escaneie códigos QR.</span>
+                        <span class="lang-de">Kein NFC? Scannen Sie QR-Codes.</span>
                     </p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Demo Section -->
+    <section class="py-20 text-center">
+        <div class="container mx-auto px-6">
+             <h3 class="text-3xl font-bold mb-12">
+                <span class="lang-en">See it in Action</span>
+                <span class="lang-fr">Voir en Action</span>
+                <span class="lang-es">Ver en Acción</span>
+                <span class="lang-pt">Ver em Ação</span>
+                <span class="lang-de">In Aktion sehen</span>
+            </h3>
+            <div class="max-w-xs mx-auto">
+                <video id="intro-video" class="rounded-lg shadow-2xl w-full" autoplay loop muted playsinline>
+                    <source src="img/IntroEN-V2.mp4" type="video/mp4">
+                </video>
             </div>
         </div>
     </section>
@@ -233,6 +313,9 @@
             <h3 class="text-3xl font-bold mb-12">
                 <span class="lang-en">Pricing</span>
                 <span class="lang-fr">Tarifs</span>
+                <span class="lang-es">Precios</span>
+                <span class="lang-pt">Preços</span>
+                <span class="lang-de">Preise</span>
             </h3>
             <div class="flex flex-col md:flex-row justify-center gap-8">
                 <!-- Free Tier -->
@@ -240,12 +323,15 @@
                     <h4 class="text-2xl font-bold mb-4">
                         <span class="lang-en">Free</span>
                         <span class="lang-fr">Gratuit</span>
+                        <span class="lang-es">Gratis</span>
+                        <span class="lang-pt">Grátis</span>
+                        <span class="lang-de">Gratis</span>
                     </h4>
                     <p class="text-5xl font-bold mb-4">€0</p>
                     <ul class="text-left space-y-2 text-gray-400">
-                        <li>✓ <span class="lang-en">Up to 3 habits</span><span class="lang-fr">Jusqu'à 3 habitudes</span></li>
-                        <li>✓ <span class="lang-en">Basic tracking</span><span class="lang-fr">Suivi de base</span></li>
-                        <li>✓ <span class="lang-en">1-month history</span><span class="lang-fr">Historique d'un mois</span></li>
+                        <li>✓ <span class="lang-en">Up to 3 habits</span><span class="lang-fr">Jusqu'à 3 habitudes</span><span class="lang-es">Hasta 3 hábitos</span><span class="lang-pt">Até 3 hábitos</span><span class="lang-de">Bis zu 3 Gewohnheiten</span></li>
+                        <li>✓ <span class="lang-en">Basic tracking</span><span class="lang-fr">Suivi de base</span><span class="lang-es">Seguimiento básico</span><span class="lang-pt">Rastreamento básico</span><span class="lang-de">Basis-Tracking</span></li>
+                        <li>✓ <span class="lang-en">1-month history</span><span class="lang-fr">Historique d'un mois</span><span class="lang-es">Historial de 1 mes</span><span class="lang-pt">Histórico de 1 mês</span><span class="lang-de">1 Monat Verlauf</span></li>
                     </ul>
                 </div>
                 <!-- Premium Tier -->
@@ -253,10 +339,10 @@
                     <h4 class="text-2xl font-bold mb-4">Premium</h4>
                     <p class="text-5xl font-bold mb-4">€9.99<span class="text-lg">/year</span></p>
                     <ul class="text-left space-y-2 text-gray-400">
-                        <li>✓ <span class="lang-en">Unlimited habits</span><span class="lang-fr">Habitudes illimitées</span></li>
-                        <li>✓ <span class="lang-en">Full gamification</span><span class="lang-fr">Gamification complète</span></li>
-                        <li>✓ <span class="lang-en">Advanced analytics</span><span class="lang-fr">Analyses avancées</span></li>
-                        <li>✓ <span class="lang-en">Unlimited NFC tags</span><span class="lang-fr">Tags NFC illimités</span></li>
+                        <li>✓ <span class="lang-en">Unlimited habits</span><span class="lang-fr">Habitudes illimitées</span><span class="lang-es">Hábitos ilimitados</span><span class="lang-pt">Hábitos ilimitados</span><span class="lang-de">Unbegrenzte Gewohnheiten</span></li>
+                        <li>✓ <span class="lang-en">Full gamification</span><span class="lang-fr">Gamification complète</span><span class="lang-es">Gamificación completa</span><span class="lang-pt">Gamificação completa</span><span class="lang-de">Volle Gamification</span></li>
+                        <li>✓ <span class="lang-en">Advanced analytics</span><span class="lang-fr">Analyses avancées</span><span class="lang-es">Análisis avanzado</span><span class="lang-pt">Análise avançada</span><span class="lang-de">Erweiterte Analysen</span></li>
+                        <li>✓ <span class="lang-en">Unlimited NFC tags</span><span class="lang-fr">Tags NFC illimités</span><span class="lang-es">Etiquetas NFC ilimitadas</span><span class="lang-pt">Tags NFC ilimitadas</span><span class="lang-de">Unbegrenzte NFC-Tags</span></li>
                     </ul>
                 </div>
             </div>
@@ -270,14 +356,23 @@
                 <a href="tutorial.html" class="hover:text-white px-3">
                     <span class="lang-en">Tutorial</span>
                     <span class="lang-fr">Tutoriel</span>
+                    <span class="lang-es">Tutorial</span>
+                    <span class="lang-pt">Tutorial</span>
+                    <span class="lang-de">Tutorial</span>
                 </a>
                 <a href="privacy.html" class="hover:text-white px-3">
                     <span class="lang-en">Privacy Policy</span>
                     <span class="lang-fr">Politique de Confidentialité</span>
+                    <span class="lang-es">Política de Privacidad</span>
+                    <span class="lang-pt">Política de Privacidade</span>
+                    <span class="lang-de">Datenschutzerklärung</span>
                 </a>
                 <a href="eula.html" class="hover:text-white px-3">
                     <span class="lang-en">Terms of Service</span>
                     <span class="lang-fr">Conditions d'Utilisation</span>
+                    <span class="lang-es">Términos de Servicio</span>
+                    <span class="lang-pt">Termos de Serviço</span>
+                    <span class="lang-de">Nutzungsbedingungen</span>
                 </a>
                 <a href="support.html" class="hover:text-white px-3">Support</a>
             </div>
@@ -287,40 +382,52 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
+            // Helper to get URL params for testing: ?lang=es
+            const urlParams = new URLSearchParams(window.location.search);
+            const forcedLang = urlParams.get('lang');
+
             const userLang = navigator.language || navigator.userLanguage;
             const body = document.body;
+            
+            let currentLang = 'en';
 
-            if (userLang.startsWith('fr')) {
-                body.classList.add('is-lang-fr');
-                
-                // Update video
+            if (forcedLang && ['en', 'fr', 'es', 'pt', 'de'].includes(forcedLang)) {
+                currentLang = forcedLang;
+            } else if (userLang.startsWith('fr')) currentLang = 'fr';
+            else if (userLang.startsWith('es')) currentLang = 'es';
+            else if (userLang.startsWith('pt')) currentLang = 'pt';
+            else if (userLang.startsWith('de')) currentLang = 'de';
+
+            body.classList.add(`is-lang-${currentLang}`);
+            
+            /*
+            // Update video - Disabled as we only have EN video for now
+            if (currentLang === 'fr') {
                 const video = document.getElementById('intro-video');
                 if (video) {
                     video.querySelector('source').src = 'img/IntroFR-V2.mp4';
                     video.load();
                 }
+            }
+            */
+            
+            // Check if language is not EN, then try to load localized images
+            if (currentLang !== 'en') {
+                const langSuffix = currentLang.toUpperCase();
                 
-                // Update feature images
-                const img1 = document.getElementById('feature-img-1');
-                if (img1) img1.src = 'img/ZeroSceen-FR.jpg';
+                const imageMap = {
+                    'feature-img-1': 'ZeroSceen',
+                    'feature-img-2': 'SecondSceen',
+                    'feature-img-3': 'ThirdSceen',
+                    'feature-img-4': 'FourSceen',
+                    'feature-img-5': 'FiveSceen',
+                    'feature-img-6': 'SixScreen'
+                };
 
-                const img2 = document.getElementById('feature-img-2');
-                if (img2) img2.src = 'img/SecondSceen-FR.jpg';
-
-                const img3 = document.getElementById('feature-img-3');
-                if (img3) img3.src = 'img/ThirdSceen-FR.jpg';
-
-                const img4 = document.getElementById('feature-img-4');
-                if (img4) img4.src = 'img/FourSceen-FR.jpg';
-
-                const img5 = document.getElementById('feature-img-5');
-                if (img5) img5.src = 'img/FiveSceen-FR.jpg';
-
-                const img6 = document.getElementById('feature-img-6');
-                if (img6) img6.src = 'img/SixScreen-FR.jpg';
-
-            } else {
-                body.classList.add('is-lang-en');
+                for (const [id, baseName] of Object.entries(imageMap)) {
+                    const img = document.getElementById(id);
+                    if (img) img.src = `img/${baseName}-${langSuffix}.jpg`;
+                }
             }
         });
     </script>
