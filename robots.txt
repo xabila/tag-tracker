@@ -1,4 +1,32 @@
 User-agent: *
 Allow: /
 
+# LLM Crawlers - Explicitly allowed
+User-agent: GPTBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Anthropic-AI
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
 Sitemap: https://tag-track.app/sitemap.xml
+
+# LLMs.txt for AI context
+# See: https://tag-track.app/llms.txt
