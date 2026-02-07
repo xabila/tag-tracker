@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HKNZ7LV3MC"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-HKNZ7LV3MC');
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#1A1A1A">
+    <title>Blog – TagTrack</title>
+    <meta name="description" content="Articles and guides about habit tracking, NFC technology, and building better routines with TagTrack.">
+    <link rel="canonical" href="https://tag-track.app/blog.html">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tag-track.app/blog.html">
+    <meta property="og:title" content="Blog – TagTrack">
+    <meta property="og:description" content="Articles and guides about habit tracking, NFC technology, and building better routines.">
+    <meta property="og:image" content="https://tag-track.app/img/TagTrackAlpha.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'neon-pink': '#FB34FF',
+              'neon-pink-light': '#FF65F9',
+              'neon-cyan': '#66F6FF',
+              'neon-cyan-dark': '#09E8E0',
+              'brand-dark': '#1A1A1A',
+              'brand-accent': '#FFD700',
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              display: ['SF Pro Rounded', 'sans-serif'],
+            },
+          }
+        }
+      }
+    </script>
+    
+    <style>
+        .lang-fr, .lang-en, .lang-es, .lang-pt, .lang-de { display: none; }
+        .is-lang-fr .lang-fr { display: inline; }
+        .is-lang-en .lang-en { display: inline; }
+        .is-lang-es .lang-es { display: inline; }
+        .is-lang-pt .lang-pt { display: inline; }
+        .is-lang-de .lang-de { display: inline; }
+        .is-lang-fr .lang-fr.block-element { display: block; }
+        .is-lang-en .lang-en.block-element { display: block; }
+        .is-lang-es .lang-es.block-element { display: block; }
+        .is-lang-pt .lang-pt.block-element { display: block; }
+        .is-lang-de .lang-de.block-element { display: block; }
+    </style>
+</head>
+<body class="bg-brand-dark text-white font-sans">
+
+    <!-- Header -->
+    <header class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <a href="index.html" class="flex items-center">
+            <img src="img/TagTrackAlpha.png" alt="TagTrack Logo" class="h-10 w-10 mr-3">
+            <h1 class="font-display text-2xl font-bold">TagTrack</h1>
+        </a>
+        <nav>
+            <a href="index.html#features" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+                <span class="lang-en">Features</span>
+                <span class="lang-fr">Fonctionnalités</span>
+                <span class="lang-es">Características</span>
+                <span class="lang-pt">Funcionalidades</span>
+                <span class="lang-de">Funktionen</span>
+            </a>
+            <a href="blog.html" class="text-neon-cyan px-3 py-2 rounded-md text-sm font-medium">Blog</a>
+            <a href="tutorial.html" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+                <span class="lang-en">Tutorial</span>
+                <span class="lang-fr">Tutoriel</span>
+                <span class="lang-es">Tutorial</span>
+                <span class="lang-pt">Tutorial</span>
+                <span class="lang-de">Tutorial</span>
+            </a>
+            <a href="support.html" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Support</a>
+        </nav>
+    </header>
+
+    <!-- Blog Header -->
+    <main class="container mx-auto px-6 py-16">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-bold font-display leading-tight mb-4">
+                <span class="lang-en">Blog</span>
+                <span class="lang-fr">Blog</span>
+                <span class="lang-es">Blog</span>
+                <span class="lang-pt">Blog</span>
+                <span class="lang-de">Blog</span>
+            </h2>
+            <p class="text-lg text-gray-300 max-w-2xl mx-auto">
+                <span class="lang-en">Articles and guides about habit tracking, NFC technology, and building better routines.</span>
+                <span class="lang-fr">Articles et guides sur le suivi d'habitudes, la technologie NFC et la création de meilleures routines.</span>
+                <span class="lang-es">Artículos y guías sobre seguimiento de hábitos, tecnología NFC y cómo construir mejores rutinas.</span>
+                <span class="lang-pt">Artigos e guias sobre rastreamento de hábitos, tecnologia NFC e como construir melhores rotinas.</span>
+                <span class="lang-de">Artikel und Anleitungen über Gewohnheitstracking, NFC-Technologie und bessere Routinen.</span>
+            </p>
+        </div>
+
+        <!-- Blog Articles Grid -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            
+            <!-- Article Card 1 -->
+            <a href="blog/phygital-habit-tracker.html" class="bg-gray-900 rounded-lg overflow-hidden hover:ring-2 hover:ring-neon-cyan transition-all duration-300 group">
+                <div class="p-6">
+                    <div class="flex justify-center mb-4">
+                        <img src="img/tagtrack_coffee.png" alt="TagTrack Mascot" class="h-24 w-auto group-hover:scale-110 transition-transform duration-300">
+                    </div>
+                    <span class="text-neon-cyan text-sm font-medium">
+                        <span class="lang-en">Guide</span>
+                        <span class="lang-fr">Guide</span>
+                        <span class="lang-es">Guía</span>
+                        <span class="lang-pt">Guia</span>
+                        <span class="lang-de">Anleitung</span>
+                    </span>
+                    <h3 class="text-xl font-bold mt-2 mb-3 group-hover:text-neon-cyan transition-colors">
+                        <span class="lang-en">What is a Phygital Habit Tracker?</span>
+                        <span class="lang-fr">Qu'est-ce qu'un habit tracker phygital ?</span>
+                        <span class="lang-es">¿Qué es un habit tracker phygital?</span>
+                        <span class="lang-pt">O que é um habit tracker phygital?</span>
+                        <span class="lang-de">Was ist ein phygitaler Habit Tracker?</span>
+                    </h3>
+                    <p class="text-gray-400 text-sm">
+                        <span class="lang-en">Discover how combining physical NFC tags with digital tracking creates the most effective habit system.</span>
+                        <span class="lang-fr">Découvrez comment combiner tags NFC physiques et suivi digital crée le système d'habitudes le plus efficace.</span>
+                        <span class="lang-es">Descubre cómo combinar etiquetas NFC físicas con seguimiento digital crea el sistema de hábitos más efectivo.</span>
+                        <span class="lang-pt">Descubra como combinar tags NFC físicas com rastreamento digital cria o sistema de hábitos mais eficaz.</span>
+                        <span class="lang-de">Entdecken Sie, wie physische NFC-Tags mit digitalem Tracking das effektivste Gewohnheitssystem schaffen.</span>
+                    </p>
+                    <div class="mt-4 text-neon-pink text-sm font-medium">
+                        <span class="lang-en">Read more →</span>
+                        <span class="lang-fr">Lire la suite →</span>
+                        <span class="lang-es">Leer más →</span>
+                        <span class="lang-pt">Ler mais →</span>
+                        <span class="lang-de">Weiterlesen →</span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Article Card 2 - Cultural Habits Challenge -->
+            <a href="blog/cultural-habits-challenge.html" class="bg-gray-900 rounded-lg overflow-hidden hover:ring-2 hover:ring-neon-pink transition-all duration-300 group">
+                <div class="p-6">
+                    <div class="flex justify-center mb-4">
+                        <img src="img/tagtrack_king.png" alt="TagTrack King Mascot" class="h-24 w-auto group-hover:scale-110 transition-transform duration-300">
+                    </div>
+                    <span class="text-neon-pink text-sm font-medium">
+                        <span class="lang-en">Community Challenge</span>
+                        <span class="lang-fr">Défi Communautaire</span>
+                        <span class="lang-es">Reto Comunitario</span>
+                        <span class="lang-pt">Desafio da Comunidade</span>
+                        <span class="lang-de">Community Challenge</span>
+                    </span>
+                    <h3 class="text-xl font-bold mt-2 mb-3 group-hover:text-neon-pink transition-colors">
+                        <span class="lang-en">The Cultural Habits Challenge</span>
+                        <span class="lang-fr">Le Défi Habitudes Culturelles</span>
+                        <span class="lang-es">El Reto Hábitos Culturales</span>
+                        <span class="lang-pt">O Desafio Hábitos Culturais</span>
+                        <span class="lang-de">Die Kulturelle Gewohnheiten Challenge</span>
+                    </h3>
+                    <p class="text-gray-400 text-sm">
+                        <span class="lang-en">Help us build a Cultural Habits library. Share your local rituals and get a free premium code!</span>
+                        <span class="lang-fr">Aidez-nous à construire une bibliothèque d'Habitudes Culturelles. Partagez vos rituels locaux et obtenez un code premium gratuit !</span>
+                        <span class="lang-es">Ayúdanos a construir una biblioteca de Hábitos Culturales. ¡Comparte tus rituales locales y obtén un código premium gratis!</span>
+                        <span class="lang-pt">Ajude-nos a construir uma biblioteca de Hábitos Culturais. Compartilhe seus rituais locais e ganhe um código premium grátis!</span>
+                        <span class="lang-de">Hilf uns, eine Bibliothek für Kulturelle Gewohnheiten aufzubauen. Teile deine lokalen Rituale und erhalte einen kostenlosen Premium-Code!</span>
+                    </p>
+                    <div class="mt-4 text-neon-pink text-sm font-medium">
+                        <span class="lang-en">Join the challenge →</span>
+                        <span class="lang-fr">Participer au défi →</span>
+                        <span class="lang-es">Unirse al reto →</span>
+                        <span class="lang-pt">Participar do desafio →</span>
+                        <span class="lang-de">An der Challenge teilnehmen →</span>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+
+        <!-- Mascots decoration -->
+        <div class="flex justify-center gap-8 items-center mt-16">
+            <img src="img/tagtrack_qrcode.png" alt="Mascot QR" class="h-20 w-auto opacity-50 hover:opacity-100 transition-opacity">
+            <img src="img/tagtrack_king.png" alt="Mascot King" class="h-20 w-auto opacity-50 hover:opacity-100 transition-opacity">
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-8">
+        <div class="container mx-auto px-6 text-center text-gray-400">
+            <div class="mb-4">
+                <a href="index.html" class="hover:text-white px-3">
+                    <span class="lang-en">Home</span>
+                    <span class="lang-fr">Accueil</span>
+                    <span class="lang-es">Inicio</span>
+                    <span class="lang-pt">Início</span>
+                    <span class="lang-de">Startseite</span>
+                </a>
+                <a href="tutorial.html" class="hover:text-white px-3">
+                    <span class="lang-en">Tutorial</span>
+                    <span class="lang-fr">Tutoriel</span>
+                    <span class="lang-es">Tutorial</span>
+                    <span class="lang-pt">Tutorial</span>
+                    <span class="lang-de">Tutorial</span>
+                </a>
+                <a href="privacy.html" class="hover:text-white px-3">
+                    <span class="lang-en">Privacy Policy</span>
+                    <span class="lang-fr">Politique de Confidentialité</span>
+                    <span class="lang-es">Política de Privacidad</span>
+                    <span class="lang-pt">Política de Privacidade</span>
+                    <span class="lang-de">Datenschutzerklärung</span>
+                </a>
+                <a href="support.html" class="hover:text-white px-3">Support</a>
+            </div>
+            <p>&copy; 2025 Xavier Larrodé. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const forcedLang = urlParams.get('lang');
+            const userLang = navigator.language || navigator.userLanguage;
+            const body = document.body;
+            
+            let currentLang = 'en';
+            if (forcedLang && ['en', 'fr', 'es', 'pt', 'de'].includes(forcedLang)) {
+                currentLang = forcedLang;
+            } else if (userLang.startsWith('fr')) currentLang = 'fr';
+            else if (userLang.startsWith('es')) currentLang = 'es';
+            else if (userLang.startsWith('pt')) currentLang = 'pt';
+            else if (userLang.startsWith('de')) currentLang = 'de';
+
+            body.classList.add(`is-lang-${currentLang}`);
+        });
+    </script>
+
+</body>
+</html>

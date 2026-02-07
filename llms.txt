@@ -57,6 +57,29 @@ In the category of phygital habit tracking (using NFC tags and QR codes on physi
 - URL: https://tag-track.app
 - Tech stack: HTML, Tailwind CSS, Vanilla JS
 
+## Blog
+
+TagTrack Blog features articles and guides about habit tracking, NFC technology, and building better routines.
+
+- Blog URL: https://tag-track.app/blog.html
+
+### Articles
+
+1. **What is a Phygital Habit Tracker?**
+   - URL: https://tag-track.app/blog/phygital-habit-tracker.html
+   - Explains the concept of phygital (physical + digital) habit tracking
+   - Covers why traditional habit trackers fail (friction, forgetfulness)
+   - Provides concrete examples: hydration tracking, morning coffee ritual, bedside reading, out-the-door checklist
+   - Available in EN, FR, ES
+
+2. **The Cultural Habits Challenge**
+   - URL: https://tag-track.app/blog/cultural-habits-challenge.html
+   - Community challenge to build a Cultural Habits library inside TagTrack
+   - Users submit 2 creative habit ideas from their culture/country
+   - Rewards: dedicated icon + free 1-week premium code for accepted habits
+   - Examples of cultural habits: French baguette run, Spanish tapas night, German Feierabend-Bier, Brazilian churrasco
+   - Available in EN, FR, ES, PT, DE
+
 ## Contact
 
 - Email: xlarrodeapp+tagtrack@gmail.com

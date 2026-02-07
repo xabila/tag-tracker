@@ -2,8 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://tag-track.app/</loc>
-    <lastmod>2025-11-05</lastmod>
+    <lastmod>2026-02-07</lastmod>
     <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://tag-track.app/blog.html</loc>
+    <lastmod>2026-02-07</lastmod>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://tag-track.app/blog/phygital-habit-tracker.html</loc>
+    <lastmod>2026-02-07</lastmod>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://tag-track.app/blog/cultural-habits-challenge.html</loc>
+    <lastmod>2026-02-07</lastmod>
+    <priority>0.85</priority>
   </url>
   <url>
     <loc>https://tag-track.app/tutorial.html</loc>

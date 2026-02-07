@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HKNZ7LV3MC"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-HKNZ7LV3MC');
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#1A1A1A">
+    <title>What is a Phygital Habit Tracker? – TagTrack Blog</title>
+    <meta name="description" content="Discover how phygital habit trackers combine physical NFC tags with digital tracking to create the most effective habit-building system.">
+    <link rel="canonical" href="https://tag-track.app/blog/phygital-habit-tracker.html">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://tag-track.app/blog/phygital-habit-tracker.html">
+    <meta property="og:title" content="What is a Phygital Habit Tracker?">
+    <meta property="og:description" content="Discover how phygital habit trackers combine physical NFC tags with digital tracking to create the most effective habit-building system.">
+    <meta property="og:image" content="https://tag-track.app/img/tagtrack_coffee.png">
+
+    <!-- Article Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "What is a Phygital Habit Tracker?",
+      "description": "Discover how phygital habit trackers combine physical NFC tags with digital tracking to create the most effective habit-building system.",
+      "image": "https://tag-track.app/img/tagtrack_coffee.png",
+      "author": {
+        "@type": "Person",
+        "name": "Xavier Larrodé"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "TagTrack",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://tag-track.app/img/TagTrackAlpha.png"
+        }
+      },
+      "datePublished": "2026-02-07",
+      "dateModified": "2026-02-07"
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'neon-pink': '#FB34FF',
+              'neon-pink-light': '#FF65F9',
+              'neon-cyan': '#66F6FF',
+              'neon-cyan-dark': '#09E8E0',
+              'brand-dark': '#1A1A1A',
+              'brand-accent': '#FFD700',
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              display: ['SF Pro Rounded', 'sans-serif'],
+            },
+          }
+        }
+      }
+    </script>
+    
+    <style>
+        .lang-fr, .lang-en, .lang-es, .lang-pt, .lang-de { display: none; }
+        .is-lang-fr .lang-fr { display: inline; }
+        .is-lang-en .lang-en { display: inline; }
+        .is-lang-es .lang-es { display: inline; }
+        .is-lang-pt .lang-pt { display: inline; }
+        .is-lang-de .lang-de { display: inline; }
+        .is-lang-fr .lang-fr.block-element { display: block; }
+        .is-lang-en .lang-en.block-element { display: block; }
+        .is-lang-es .lang-es.block-element { display: block; }
+        .is-lang-pt .lang-pt.block-element { display: block; }
+        .is-lang-de .lang-de.block-element { display: block; }
+        
+        .article-content h2 {
+            font-size: 1.75rem;
+            font-weight: 700;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            color: #66F6FF;
+        }
+        .article-content h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+            color: #FB34FF;
+        }
+        .article-content p {
+            margin-bottom: 1rem;
+            line-height: 1.8;
+            color: #d1d5db;
+        }
+        .article-content ul {
+            list-style-type: disc;
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+            color: #d1d5db;
+        }
+        .article-content li {
+            margin-bottom: 0.5rem;
+            line-height: 1.6;
+        }
+        .article-content ol {
+            list-style-type: decimal;
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+            color: #d1d5db;
+        }
+    </style>
+</head>
+<body class="bg-brand-dark text-white font-sans">
+
+    <!-- Header -->
+    <header class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <a href="../index.html" class="flex items-center">
+            <img src="../img/TagTrackAlpha.png" alt="TagTrack Logo" class="h-10 w-10 mr-3">
+            <h1 class="font-display text-2xl font-bold">TagTrack</h1>
+        </a>
+        <nav>
+            <a href="../index.html#features" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+                <span class="lang-en">Features</span>
+                <span class="lang-fr">Fonctionnalités</span>
+                <span class="lang-es">Características</span>
+                <span class="lang-pt">Funcionalidades</span>
+                <span class="lang-de">Funktionen</span>
+            </a>
+            <a href="../blog.html" class="text-neon-cyan px-3 py-2 rounded-md text-sm font-medium">Blog</a>
+            <a href="../tutorial.html" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+                <span class="lang-en">Tutorial</span>
+                <span class="lang-fr">Tutoriel</span>
+                <span class="lang-es">Tutorial</span>
+                <span class="lang-pt">Tutorial</span>
+                <span class="lang-de">Tutorial</span>
+            </a>
+            <a href="../support.html" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Support</a>
+        </nav>
+    </header>
+
+    <!-- Article -->
+    <main class="container mx-auto px-6 py-12">
+        <article class="max-w-3xl mx-auto">
+            
+            <!-- Breadcrumb -->
+            <nav class="text-sm text-gray-400 mb-8">
+                <a href="../blog.html" class="hover:text-neon-cyan">Blog</a>
+                <span class="mx-2">/</span>
+                <span class="lang-en">What is a Phygital Habit Tracker?</span>
+                <span class="lang-fr">Qu'est-ce qu'un habit tracker phygital ?</span>
+                <span class="lang-es">¿Qué es un habit tracker phygital?</span>
+            </nav>
+
+            <!-- Hero with mascot -->
+            <div class="flex flex-col md:flex-row items-center gap-8 mb-12">
+                <div class="flex-1">
+                    <span class="text-neon-cyan text-sm font-medium uppercase tracking-wide">
+                        <span class="lang-en">Guide</span>
+                        <span class="lang-fr">Guide</span>
+                        <span class="lang-es">Guía</span>
+                    </span>
+                    <h1 class="text-4xl md:text-5xl font-bold font-display leading-tight mt-2 mb-4">
+                        <span class="lang-en">What is a Phygital Habit Tracker?</span>
+                        <span class="lang-fr">Qu'est-ce qu'un habit tracker phygital ?</span>
+                        <span class="lang-es">¿Qué es un habit tracker phygital?</span>
+                    </h1>
+                    <p class="text-gray-400">
+                        <span class="lang-en">February 7, 2026 · 8 min read</span>
+                        <span class="lang-fr">7 février 2026 · 8 min de lecture</span>
+                        <span class="lang-es">7 de febrero de 2026 · 8 min de lectura</span>
+                    </p>
+                </div>
+                <div class="flex-shrink-0">
+                    <img src="../img/tagtrack_coffee.png" alt="TagTrack Mascot with Coffee" class="h-40 w-auto animate-bounce" style="animation-duration: 3s;">
+                </div>
+            </div>
+
+            <!-- Article Content -->
+            <div class="article-content">
+                
+                <!-- ENGLISH VERSION -->
+                <div class="lang-en block-element">
+                    <h2>1. Why traditional habit trackers aren't enough</h2>
+                    <p>Most habit trackers are purely digital. You open an app, find the right habit in a list, tap a checkbox, and hope you remember to come back tomorrow.</p>
+                    <p>This creates friction (too many steps) and makes it easy to forget, because nothing in your physical environment reminds you of the habit at the right time.</p>
+
+                    <h2>2. What "phygital" really means</h2>
+                    <p>"Phygital" combines physical and digital.</p>
+                    <p>In many experiences (retail, events, museums), NFC tags and QR codes are used to connect real-world places or objects with digital content, actions, or data.</p>
+                    <p>A phygital habit tracker applies the same principle to your routines.</p>
+
+                    <h2>3. How phygital habit tracking works</h2>
+                    <p>With a phygital habit tracker like TagTrack, you attach NFC tags or QR codes to real objects in your environment: your water bottle, coffee machine, nightstand, front door, or gym bag.</p>
+                    <p>Each tag is linked to one or several habits in the app.</p>
+                    <p>When you tap the tag with your iPhone, the app instantly logs the action, updates your streak, and shows your progress—without navigating menus or searching for the right habit.</p>
+                </div>
+
+                <!-- FRENCH VERSION -->
+                <div class="lang-fr block-element">
+                    <h2>1. Pourquoi les habit trackers traditionnels ne suffisent pas</h2>
+                    <p>La plupart des trackers d'habitudes sont purement digitaux. Vous ouvrez une application, cherchez la bonne habitude dans une liste, cochez une case, et espérez vous souvenir de revenir demain.</p>
+                    <p>Cela crée des frictions (trop d'étapes) et facilite l'oubli, car rien dans votre environnement physique ne vous rappelle l'habitude au bon moment.</p>
+
+                    <h2>2. Ce que "phygital" signifie vraiment</h2>
+                    <p>"Phygital" combine physique et digital.</p>
+                    <p>Dans de nombreuses expériences (commerce, événements, musées), les tags NFC et les QR codes sont utilisés pour connecter des lieux ou objets du monde réel avec du contenu, des actions ou des données numériques.</p>
+                    <p>Un habit tracker phygital applique le même principe à vos routines.</p>
+
+                    <h2>3. Comment fonctionne le suivi d'habitudes phygital</h2>
+                    <p>Avec un tracker d'habitudes phygital comme TagTrack, vous attachez des tags NFC ou des QR codes à des objets réels de votre environnement : votre bouteille d'eau, machine à café, table de nuit, porte d'entrée ou sac de sport.</p>
+                    <p>Chaque tag est lié à une ou plusieurs habitudes dans l'application.</p>
+                    <p>Lorsque vous scannez le tag avec votre iPhone, l'application enregistre instantanément l'action, met à jour votre série et affiche votre progression—sans naviguer dans les menus ni chercher la bonne habitude.</p>
+                </div>
+
+                <!-- SPANISH VERSION -->
+                <div class="lang-es block-element">
+                    <h2>1. Por qué los habit trackers tradicionales no son suficientes</h2>
+                    <p>La mayoría de los rastreadores de hábitos son puramente digitales. Abres una app, buscas el hábito correcto en una lista, marcas una casilla y esperas acordarte de volver mañana.</p>
+                    <p>Esto crea fricción (demasiados pasos) y facilita el olvido, porque nada en tu entorno físico te recuerda el hábito en el momento adecuado.</p>
+
+                    <h2>2. Qué significa realmente "phygital"</h2>
+                    <p>"Phygital" combina físico y digital.</p>
+                    <p>En muchas experiencias (comercio, eventos, museos), las etiquetas NFC y los códigos QR se usan para conectar lugares u objetos del mundo real con contenido, acciones o datos digitales.</p>
+                    <p>Un habit tracker phygital aplica el mismo principio a tus rutinas.</p>
+
+                    <h2>3. Cómo funciona el seguimiento de hábitos phygital</h2>
+                    <p>Con un rastreador de hábitos phygital como TagTrack, colocas etiquetas NFC o códigos QR en objetos reales de tu entorno: tu botella de agua, cafetera, mesita de noche, puerta de entrada o bolsa de gimnasio.</p>
+                    <p>Cada etiqueta está vinculada a uno o varios hábitos en la app.</p>
+                    <p>Cuando escaneas la etiqueta con tu iPhone, la app registra instantáneamente la acción, actualiza tu racha y muestra tu progreso—sin navegar por menús ni buscar el hábito correcto.</p>
+                </div>
+
+                <!-- Mascot divider -->
+                <div class="flex justify-center my-12">
+                    <img src="../img/tagtrack_qrcode.png" alt="TagTrack QR Mascot" class="h-28 w-auto animate-pulse" style="animation-duration: 4s;">
+                </div>
+
+                <!-- ENGLISH VERSION continued -->
+                <div class="lang-en block-element">
+                    <h2>4. Why phygital tracking makes habits stick</h2>
+                    <p>Phygital tracking solves two classic problems of habit tracking: friction and forgetfulness.</p>
+                    <p>Friction disappears because logging a habit becomes a simple gesture on an object you already touch.</p>
+                    <p>Forgetfulness decreases because the tag acts as a physical reminder at the exact place and time where the habit should happen.</p>
+                    <p>It is especially effective for daily routines like hydration, morning/evening rituals, reading, or taking medication.</p>
+
+                    <h2>5. Examples of phygital setups with TagTrack</h2>
+
+                    <h3>Hydration at your desk</h3>
+                    <p>Place an NFC tag on your water bottle or next to your monitor.</p>
+                    <p>Each time you drink, tap your phone and log your habit in one second.</p>
+                    <p>Over time, your desk becomes a clear visual reminder to stay hydrated.</p>
+
+                    <h3>Morning coffee ritual</h3>
+                    <p>Stick a tag on your coffee machine.</p>
+                    <p>Link it to a "Morning routine" habit that includes coffee, journaling, and planning your day.</p>
+                    <p>Tapping the tag becomes the first step of your ritual and keeps your streak alive.</p>
+
+                    <h3>Bedside reading routine</h3>
+                    <p>Add a tag to your nightstand or book cover.</p>
+                    <p>Tap when you start reading in the evening, and track how often you actually read before bed instead of scrolling on your phone.</p>
+
+                    <h3>Out-the-door checklist</h3>
+                    <p>Use a tag near your door to track habits like "took my meds", "packed my gym bag", or "fed the cat" before leaving the house.</p>
+                    <p>One tap before you walk out helps you avoid forgetting important tasks.</p>
+                </div>
+
+                <!-- FRENCH VERSION continued -->
+                <div class="lang-fr block-element">
+                    <h2>4. Pourquoi le suivi phygital fait tenir les habitudes</h2>
+                    <p>Le suivi phygital résout deux problèmes classiques du suivi d'habitudes : les frictions et l'oubli.</p>
+                    <p>Les frictions disparaissent car enregistrer une habitude devient un simple geste sur un objet que vous touchez déjà.</p>
+                    <p>L'oubli diminue car le tag agit comme un rappel physique à l'endroit et au moment exact où l'habitude doit se produire.</p>
+                    <p>C'est particulièrement efficace pour les routines quotidiennes comme l'hydratation, les rituels du matin/soir, la lecture ou la prise de médicaments.</p>
+
+                    <h2>5. Exemples de configurations phygitales avec TagTrack</h2>
+
+                    <h3>Hydratation au bureau</h3>
+                    <p>Placez un tag NFC sur votre bouteille d'eau ou à côté de votre écran.</p>
+                    <p>Chaque fois que vous buvez, scannez avec votre téléphone et enregistrez votre habitude en une seconde.</p>
+                    <p>Avec le temps, votre bureau devient un rappel visuel clair pour rester hydraté.</p>
+
+                    <h3>Rituel café du matin</h3>
+                    <p>Collez un tag sur votre machine à café.</p>
+                    <p>Liez-le à une habitude "Routine du matin" qui inclut café, journal et planification de la journée.</p>
+                    <p>Scanner le tag devient la première étape de votre rituel et maintient votre série.</p>
+
+                    <h3>Routine lecture au coucher</h3>
+                    <p>Ajoutez un tag à votre table de nuit ou à la couverture de votre livre.</p>
+                    <p>Scannez quand vous commencez à lire le soir, et suivez combien de fois vous lisez vraiment avant de dormir au lieu de scroller sur votre téléphone.</p>
+
+                    <h3>Checklist avant de partir</h3>
+                    <p>Utilisez un tag près de votre porte pour suivre des habitudes comme "pris mes médicaments", "préparé mon sac de sport" ou "nourri le chat" avant de partir.</p>
+                    <p>Un scan avant de sortir vous aide à éviter d'oublier des tâches importantes.</p>
+                </div>
+
+                <!-- SPANISH VERSION continued -->
+                <div class="lang-es block-element">
+                    <h2>4. Por qué el seguimiento phygital hace que los hábitos perduren</h2>
+                    <p>El seguimiento phygital resuelve dos problemas clásicos del seguimiento de hábitos: la fricción y el olvido.</p>
+                    <p>La fricción desaparece porque registrar un hábito se convierte en un simple gesto sobre un objeto que ya tocas.</p>
+                    <p>El olvido disminuye porque la etiqueta actúa como un recordatorio físico en el lugar y momento exactos donde debe ocurrir el hábito.</p>
+                    <p>Es especialmente efectivo para rutinas diarias como hidratación, rituales matutinos/nocturnos, lectura o tomar medicamentos.</p>
+
+                    <h2>5. Ejemplos de configuraciones phygitales con TagTrack</h2>
+
+                    <h3>Hidratación en el escritorio</h3>
+                    <p>Coloca una etiqueta NFC en tu botella de agua o junto a tu monitor.</p>
+                    <p>Cada vez que bebas, escanea con tu teléfono y registra tu hábito en un segundo.</p>
+                    <p>Con el tiempo, tu escritorio se convierte en un recordatorio visual claro para mantenerte hidratado.</p>
+
+                    <h3>Ritual del café matutino</h3>
+                    <p>Pega una etiqueta en tu cafetera.</p>
+                    <p>Vincúlala a un hábito "Rutina matutina" que incluya café, diario y planificación del día.</p>
+                    <p>Escanear la etiqueta se convierte en el primer paso de tu ritual y mantiene tu racha viva.</p>
+
+                    <h3>Rutina de lectura nocturna</h3>
+                    <p>Añade una etiqueta a tu mesita de noche o a la portada de tu libro.</p>
+                    <p>Escanea cuando empieces a leer por la noche, y rastrea cuántas veces realmente lees antes de dormir en lugar de scrollear en tu teléfono.</p>
+
+                    <h3>Lista de verificación al salir</h3>
+                    <p>Usa una etiqueta cerca de tu puerta para rastrear hábitos como "tomé mis medicinas", "preparé mi bolsa de gimnasio" o "alimenté al gato" antes de salir de casa.</p>
+                    <p>Un escaneo antes de salir te ayuda a evitar olvidar tareas importantes.</p>
+                </div>
+
+                <!-- Mascot divider -->
+                <div class="flex justify-center my-12">
+                    <img src="../img/tagtrack_king.png" alt="TagTrack King Mascot" class="h-28 w-auto hover:rotate-12 transition-transform">
+                </div>
+
+                <!-- ENGLISH VERSION final -->
+                <div class="lang-en block-element">
+                    <h2>6. NFC vs QR codes: flexible phygital</h2>
+                    <p>TagTrack is NFC-first, but also supports QR codes.</p>
+                    <p>NFC tags are perfect for a smooth "tap" experience on objects you touch often.</p>
+                    <p>QR codes are useful when you want to print tags, share setups, or stick codes on surfaces where NFC stickers are less convenient.</p>
+                    <p>Together, they make phygital tracking flexible and easy to deploy anywhere.</p>
+
+                    <h2>7. Who is a phygital habit tracker for?</h2>
+                    <p>Phygital habit tracking is ideal if:</p>
+                    <ul>
+                        <li>you have already tried traditional habit trackers but stopped using them after a few weeks;</li>
+                        <li>you like to organize your life with physical cues, labels, or systems;</li>
+                        <li>you enjoy automation, NFC shortcuts, and making your environment "smarter".</li>
+                    </ul>
+                    <p>It is also a good fit for people who benefit from strong visual and contextual reminders in their daily routines.</p>
+
+                    <h2>8. Getting started with TagTrack</h2>
+                    <p>Getting started with a phygital habit tracker is simple:</p>
+                    <ol>
+                        <li>Download TagTrack on iOS from the App Store.</li>
+                        <li>Create one to three key habits you want to focus on.</li>
+                        <li>Place NFC tags or QR codes on the objects related to these habits and link them in the app.</li>
+                    </ol>
+                    <p>From there, every tap on a tag becomes both a reminder and a logged action.</p>
+
+                    <h2>9. Conclusion</h2>
+                    <p>A phygital habit tracker makes your habits live on your objects, not only inside an app.</p>
+                    <p>By combining physical anchors with effortless digital tracking, it turns your environment into a quiet but powerful ally for building better routines.</p>
+                </div>
+
+                <!-- FRENCH VERSION final -->
+                <div class="lang-fr block-element">
+                    <h2>6. NFC vs QR codes : phygital flexible</h2>
+                    <p>TagTrack privilégie le NFC, mais supporte aussi les QR codes.</p>
+                    <p>Les tags NFC sont parfaits pour une expérience de "scan" fluide sur les objets que vous touchez souvent.</p>
+                    <p>Les QR codes sont utiles quand vous voulez imprimer des tags, partager des configurations ou coller des codes sur des surfaces où les autocollants NFC sont moins pratiques.</p>
+                    <p>Ensemble, ils rendent le suivi phygital flexible et facile à déployer partout.</p>
+
+                    <h2>7. À qui s'adresse un habit tracker phygital ?</h2>
+                    <p>Le suivi d'habitudes phygital est idéal si :</p>
+                    <ul>
+                        <li>vous avez déjà essayé des trackers d'habitudes traditionnels mais arrêté de les utiliser après quelques semaines ;</li>
+                        <li>vous aimez organiser votre vie avec des indices physiques, des étiquettes ou des systèmes ;</li>
+                        <li>vous appréciez l'automatisation, les raccourcis NFC et rendre votre environnement "plus intelligent".</li>
+                    </ul>
+                    <p>C'est aussi adapté pour les personnes qui bénéficient de rappels visuels et contextuels forts dans leurs routines quotidiennes.</p>
+
+                    <h2>8. Commencer avec TagTrack</h2>
+                    <p>Commencer avec un habit tracker phygital est simple :</p>
+                    <ol>
+                        <li>Téléchargez TagTrack sur iOS depuis l'App Store.</li>
+                        <li>Créez une à trois habitudes clés sur lesquelles vous voulez vous concentrer.</li>
+                        <li>Placez des tags NFC ou QR codes sur les objets liés à ces habitudes et liez-les dans l'application.</li>
+                    </ol>
+                    <p>À partir de là, chaque scan sur un tag devient à la fois un rappel et une action enregistrée.</p>
+
+                    <h2>9. Conclusion</h2>
+                    <p>Un habit tracker phygital fait vivre vos habitudes sur vos objets, pas seulement dans une application.</p>
+                    <p>En combinant des ancres physiques avec un suivi digital sans effort, il transforme votre environnement en un allié discret mais puissant pour construire de meilleures routines.</p>
+                </div>
+
+                <!-- SPANISH VERSION final -->
+                <div class="lang-es block-element">
+                    <h2>6. NFC vs códigos QR: phygital flexible</h2>
+                    <p>TagTrack prioriza NFC, pero también soporta códigos QR.</p>
+                    <p>Las etiquetas NFC son perfectas para una experiencia de "escaneo" fluida en objetos que tocas frecuentemente.</p>
+                    <p>Los códigos QR son útiles cuando quieres imprimir etiquetas, compartir configuraciones o pegar códigos en superficies donde los adhesivos NFC son menos convenientes.</p>
+                    <p>Juntos, hacen que el seguimiento phygital sea flexible y fácil de implementar en cualquier lugar.</p>
+
+                    <h2>7. ¿Para quién es un habit tracker phygital?</h2>
+                    <p>El seguimiento de hábitos phygital es ideal si:</p>
+                    <ul>
+                        <li>ya has probado rastreadores de hábitos tradicionales pero dejaste de usarlos después de unas semanas;</li>
+                        <li>te gusta organizar tu vida con señales físicas, etiquetas o sistemas;</li>
+                        <li>disfrutas la automatización, los atajos NFC y hacer tu entorno "más inteligente".</li>
+                    </ul>
+                    <p>También es adecuado para personas que se benefician de recordatorios visuales y contextuales fuertes en sus rutinas diarias.</p>
+
+                    <h2>8. Empezar con TagTrack</h2>
+                    <p>Empezar con un habit tracker phygital es simple:</p>
+                    <ol>
+                        <li>Descarga TagTrack en iOS desde la App Store.</li>
+                        <li>Crea de uno a tres hábitos clave en los que quieras enfocarte.</li>
+                        <li>Coloca etiquetas NFC o códigos QR en los objetos relacionados con estos hábitos y vincúlalos en la app.</li>
+                    </ol>
+                    <p>A partir de ahí, cada escaneo en una etiqueta se convierte tanto en un recordatorio como en una acción registrada.</p>
+
+                    <h2>9. Conclusión</h2>
+                    <p>Un habit tracker phygital hace que tus hábitos vivan en tus objetos, no solo dentro de una app.</p>
+                    <p>Al combinar anclas físicas con seguimiento digital sin esfuerzo, convierte tu entorno en un aliado silencioso pero poderoso para construir mejores rutinas.</p>
+                </div>
+
+            </div>
+
+            <!-- CTA Section -->
+            <div class="mt-16 text-center bg-gray-900 rounded-lg p-8">
+                <div class="flex justify-center gap-8 mb-6">
+                    <img src="../img/tagtrack_coffee.png" alt="Mascot Coffee" class="h-20 w-auto">
+                    <img src="../img/tagtrack_qrcode.png" alt="Mascot QR" class="h-20 w-auto">
+                </div>
+                <h3 class="text-2xl font-bold mb-4">
+                    <span class="lang-en">Ready to try phygital habit tracking?</span>
+                    <span class="lang-fr">Prêt à essayer le suivi d'habitudes phygital ?</span>
+                    <span class="lang-es">¿Listo para probar el seguimiento de hábitos phygital?</span>
+                </h3>
+                <a href="https://apps.apple.com/app/id6754224455" target="_blank" class="bg-neon-pink text-white font-bold py-3 px-8 rounded-full hover:bg-neon-pink-light transition duration-300 inline-block">
+                    <span class="lang-en">Download TagTrack</span>
+                    <span class="lang-fr">Télécharger TagTrack</span>
+                    <span class="lang-es">Descargar TagTrack</span>
+                </a>
+            </div>
+
+            <!-- Back to blog -->
+            <div class="mt-8 text-center">
+                <a href="../blog.html" class="text-neon-cyan hover:underline">
+                    <span class="lang-en">← Back to blog</span>
+                    <span class="lang-fr">← Retour au blog</span>
+                    <span class="lang-es">← Volver al blog</span>
+                </a>
+            </div>
+
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-8 mt-16">
+        <div class="container mx-auto px-6 text-center text-gray-400">
+            <div class="mb-4">
+                <a href="../index.html" class="hover:text-white px-3">
+                    <span class="lang-en">Home</span>
+                    <span class="lang-fr">Accueil</span>
+                    <span class="lang-es">Inicio</span>
+                </a>
+                <a href="../blog.html" class="hover:text-white px-3">Blog</a>
+                <a href="../tutorial.html" class="hover:text-white px-3">
+                    <span class="lang-en">Tutorial</span>
+                    <span class="lang-fr">Tutoriel</span>
+                    <span class="lang-es">Tutorial</span>
+                </a>
+                <a href="../privacy.html" class="hover:text-white px-3">
+                    <span class="lang-en">Privacy Policy</span>
+                    <span class="lang-fr">Politique de Confidentialité</span>
+                    <span class="lang-es">Política de Privacidad</span>
+                </a>
+                <a href="../support.html" class="hover:text-white px-3">Support</a>
+            </div>
+            <p>&copy; 2025 Xavier Larrodé. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const forcedLang = urlParams.get('lang');
+            const userLang = navigator.language || navigator.userLanguage;
+            const body = document.body;
+            
+            let currentLang = 'en';
+            if (forcedLang && ['en', 'fr', 'es', 'pt', 'de'].includes(forcedLang)) {
+                currentLang = forcedLang;
+            } else if (userLang.startsWith('fr')) currentLang = 'fr';
+            else if (userLang.startsWith('es')) currentLang = 'es';
+            else if (userLang.startsWith('pt')) currentLang = 'pt';
+            else if (userLang.startsWith('de')) currentLang = 'de';
+
+            body.classList.add(`is-lang-${currentLang}`);
+        });
+    </script>
+
+</body>
+</html>
