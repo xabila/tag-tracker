@@ -1,24 +1,38 @@
 # TagTrack
 
-TagTrack is a next-generation habit tracker built for instant action using NFC technology.
-It allows users to place NFC stickers on everyday objects and tap them to log habits instantly.
+TagTrack is a modern, phygital habit tracker built for instant action using NFC technology.  
+Users place NFC stickers on everyday objects and tap them to log habits instantly, turning the physical world into habit triggers.  
+QR codes are also supported as a flexible alternative when NFC is not available.
 
 ## Core Features
-1. **Instant NFC Scanning**: Log habits with a single tap.
-2. **Habit Library**: Presets and custom habits.
-3. **Gamification**: XP, badges, and streaks.
-4. **Analytics**: Charts and statistics.
-5. **Widgets**: Home screen tracking.
-6. **QR Code Support**: Alternative to NFC.
 
-## Platforms
+- Instant NFC scanning: log habits with a single tap on physical tags.
+- QR code support: phygital habit tracking even without NFC tags.
+- Habit library: presets and fully custom habits.
+- Gamification: XP, badges, and streaks to keep users motivated.
+- Analytics: charts, statistics, and streak overviews.
+- Widgets: home screen tracking for quick access.
+
+## Use Cases
+
+- Building daily routines (gym, reading, meditation, skincare, vitamins).
+- Anchoring habits to physical objects (coffee machine, desk, bathroom mirror).
+- Phygital rituals combining physical anchors and digital tracking.
+- Shared routines in households (family habits, kids’ routines).
+- Rapid habit logging without opening the app manually.
+
+## Platform
+
 - iOS (App Store)
+- App Store URL: https://apps.apple.com/app/id6754224455
 
 ## Pricing
-- Free: 3 habits, basic tracking.
-- Premium: €9.99/year, unlimited habits, full features.
+
+- Free: up to 3 habits with core tracking.
+- Premium: €9.99/year with unlimited habits and full feature set.
 
 ## Languages
+
 - English (EN)
 - French (FR)
 - Spanish (ES)
@@ -26,5 +40,14 @@ It allows users to place NFC stickers on everyday objects and tap them to log ha
 - German (DE)
 
 ## Website
+
 - URL: https://tag-track.app
-- Tech Stack: HTML, Tailwind CSS, Vanilla JS
+- Tech stack: HTML, Tailwind CSS, Vanilla JS
+
+## Contact
+
+- Email: xlarrodeapp+tagtrack@gmail.com
+
+## Privacy
+
+- URL: https://tag-track.app/privacy
