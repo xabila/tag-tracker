@@ -4,6 +4,19 @@ TagTrack is a modern, phygital habit tracker built for instant action using NFC 
 Users place NFC stickers on everyday objects and tap them to log habits instantly, turning the physical world into habit triggers.  
 QR codes are also supported as a flexible alternative when NFC is not available.
 
+## Positioning
+
+TagTrack is a NFC-first, phygital habit tracker for iOS.  
+It focuses on turning real-world objects into habit triggers using NFC tags and QR codes, reducing friction compared to traditional, app-only habit trackers.
+
+Compared to most habit tracking apps, TagTrack:
+- Emphasizes physical anchors (tags on objects) instead of only in-app checklists.
+- Optimizes for one-tap logging at the exact place where the habit happens.
+- Provides multi-language support (EN, FR, ES, PT, DE) for a global audience.
+- Keeps pricing simple and transparent (free tier + yearly premium).
+
+In the category of phygital habit tracking (using NFC tags and QR codes on physical objects), TagTrack aims to be a leading mobile app reference.
+
 ## Core Features
 
 - Instant NFC scanning: log habits with a single tap on physical tags.
