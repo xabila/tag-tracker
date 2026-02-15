@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 <head>
     <meta charset="UTF-8">
     <!-- Google tag (gtag.js) -->
@@ -19,185 +19,52 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              primary: "#FB34FF",
+              cyan: "#66F6FF",
+              "background-dark": "#1A1A1A",
+            },
+            fontFamily: {
+              display: ["Plus Jakarta Sans", "sans-serif"],
+              body: ["Inter", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
         body {
-            background: #1A1A1A;
-            color: white;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
+            background-color: #1A1A1A;
         }
-        
-        /* Header with back button */
-        .header {
-            padding: 16px;
-            background: rgba(26, 26, 26, 0.95);
-            backdrop-filter: blur(10px);
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            position: sticky;
-            top: 0;
-            z-index: 10;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        .glass-panel {
+            background: rgba(42, 42, 42, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
         }
-        
-        .back-button {
-            width: 36px;
-            height: 36px;
-            border-radius: 50%;
-            background: rgba(255, 255, 255, 0.1);
-            border: none;
-            color: white;
-            font-size: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            transition: background 0.2s;
+        .video-glow {
+            box-shadow: 0 0 50px -12px rgba(251, 52, 255, 0.5);
         }
-        
-        .back-button:hover {
-            background: rgba(255, 255, 255, 0.2);
-        }
-        
-        .header h1 {
-            font-size: 24px;
-            font-weight: 600;
-            flex: 1;
-        }
-        
-        /* Main content container */
-        .content {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 40px 20px;
-            max-width: 1400px;
-            margin: 0 auto;
-            width: 100%;
-        }
-        
-        /* Description section */
-        .description {
-            text-align: center;
-            max-width: 600px;
-            margin-bottom: 32px;
-        }
-        
-        .description h2 {
-            font-size: 32px;
-            margin-bottom: 12px;
-            background: linear-gradient(135deg, #FB34FF, #66F6FF);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-        
-        .description p {
-            color: #aaa;
-            font-size: 18px;
-            line-height: 1.6;
-        }
-        
-        /* Video container */
-        .video-wrapper {
-            width: 100%;
-            max-width: 500px;
-            position: relative;
-            background: #000;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 8px 32px rgba(251, 52, 255, 0.2);
-        }
-        
-        /* Aspect ratio container for portrait video */
-        .video-container {
-            position: relative;
-            padding-bottom: 177.78%; /* 9:16 aspect ratio for portrait */
-            background: #000;
-        }
-        
-        video {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-        }
-        
-        /* Custom controls overlay */
-        .custom-controls {
-            position: absolute;
-            bottom: 60px;
-            left: 50%;
-            transform: translateX(-50%);
-            display: flex;
-            gap: 12px;
-            z-index: 2;
-            padding: 12px;
-            background: rgba(0, 0, 0, 0.7);
-            backdrop-filter: blur(10px);
-            border-radius: 50px;
-            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
-        }
-        
-        .control-btn {
-            width: 52px;
-            height: 52px;
-            border-radius: 50%;
-            border: 2px solid rgba(255, 255, 255, 0.3);
-            background: rgba(255, 255, 255, 0.1);
-            color: white;
-            font-size: 14px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.2s;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            line-height: 1;
-        }
-        
-        .control-btn:hover {
-            background: rgba(251, 52, 255, 0.3);
-            border-color: #FB34FF;
-            transform: scale(1.05);
-        }
-        
-        .control-btn:active {
-            transform: scale(0.95);
-        }
-        
-        .control-icon {
-            font-size: 18px;
-            margin-bottom: 2px;
-        }
-        
-        .control-label {
-            font-size: 10px;
-            opacity: 0.8;
-        }
-        
-        /* Loading state */
-        .loading {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-            z-index: 1;
-        }
+        .lang-label { display: none; }
+        .is-lang-fr .lang-fr { display: inline; }
+        .is-lang-en .lang-en { display: inline; }
         
         .spinner {
             width: 48px;
@@ -206,172 +73,96 @@
             border-top-color: #FB34FF;
             border-radius: 50%;
             animation: spin 1s linear infinite;
-            margin: 0 auto 16px;
         }
-        
-        @keyframes spin {
-            to { transform: rotate(360deg); }
-        }
-        
-        .lang-label {
-            display: none;
-        }
-        
-        .is-lang-fr .lang-fr { display: inline; }
-        .is-lang-en .lang-en { display: inline; }
-        
-        /* Responsive adjustments */
-        @media (max-width: 768px) {
-            .content {
-                padding: 24px 16px;
-            }
-            
-            .description h2 {
-                font-size: 24px;
-            }
-            
-            .description p {
-                font-size: 16px;
-            }
-            
-            .video-wrapper {
-                max-width: 100%;
-            }
-        }
-        
-        /* Mobile app mode - full screen */
-        @media (max-width: 480px) and (orientation: portrait) {
-            body {
-                overflow: hidden;
-            }
-            
-            .content {
-                padding: 16px;
-                justify-content: center;
-            }
-            
-            .description {
-                display: none;
-            }
-            
-            .video-wrapper {
-                max-width: 100%;
-                border-radius: 0;
-                box-shadow: none;
-                flex: 1;
-                display: flex;
-                flex-direction: column;
-            }
-            
-            .video-container {
-                flex: 1;
-                padding-bottom: 0;
-                height: 100%;
-            }
-        }
+        @keyframes spin { to { transform: rotate(360deg); } }
     </style>
 </head>
-<body>
-    <div class="header">
-        <button class="back-button" onclick="goBack()">←</button>
-        <h1>
+<body class="bg-background-dark text-slate-100 font-body antialiased min-h-screen flex flex-col">
+    
+    <!-- Header -->
+    <header class="sticky top-0 w-full z-50 glass-panel border-b border-white/5 h-20 flex items-center px-4 sm:px-6 lg:px-8">
+        <button onclick="goBack()" class="w-10 h-10 rounded-full bg-white/5 hover:bg-white/10 flex items-center justify-center transition-colors mr-4">
+            <span class="material-icons-round">arrow_back</span>
+        </button>
+        <h1 class="font-display font-bold text-xl">
             <span class="lang-label lang-en">Tutorial</span>
             <span class="lang-label lang-fr">Tutoriel</span>
         </h1>
-    </div>
+    </header>
     
-    <div class="content">
-        <div class="description">
-            <h2>
-                <span class="lang-label lang-en">Learn TagTrack</span>
-                <span class="lang-label lang-fr">Apprendre TagTrack</span>
+    <main class="flex-1 max-w-7xl mx-auto w-full px-4 py-12 flex flex-col items-center">
+        
+        <div class="text-center mb-12 space-y-4 max-w-2xl">
+            <h2 class="text-3xl md:text-5xl font-display font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-primary to-cyan">
+                <span class="lang-label lang-en">Master TagTrack</span>
+                <span class="lang-label lang-fr">Maîtriser TagTrack</span>
             </h2>
-            <p>
-                <span class="lang-label lang-en">Watch this step-by-step video guide to master TagTrack and start building better habits with NFC technology.</span>
-                <span class="lang-label lang-fr">Regardez ce guide vidéo étape par étape pour maîtriser TagTrack et commencer à construire de meilleures habitudes avec la technologie NFC.</span>
+            <p class="text-slate-400 text-lg">
+                <span class="lang-label lang-en">Watch this guide to start building better habits with NFC technology.</span>
+                <span class="lang-label lang-fr">Regardez ce guide pour commencer à construire de meilleures habitudes avec la technologie NFC.</span>
             </p>
         </div>
         
-        <div class="video-wrapper">
-            <div class="video-container">
-                <div class="loading" id="loading">
-                    <div class="spinner"></div>
-                    <p class="lang-label lang-en">Loading tutorial...</p>
-                    <p class="lang-label lang-fr">Chargement du tutoriel...</p>
-                </div>
-                <video id="tutorial-video" controls autoplay muted playsinline preload="auto" style="display: none;">
-                    <source src="img/TutoTT-EN.mp4" type="video/mp4">
-                </video>
-                
-                <!-- Custom skip controls -->
-                <div class="custom-controls" id="custom-controls" style="display: none;">
-                    <button class="control-btn" onclick="skipBackward()" title="Rewind 10 seconds">
-                        <span class="control-icon">⏪</span>
-                        <span class="control-label">-10s</span>
-                    </button>
-                    <button class="control-btn" onclick="skipForward()" title="Forward 10 seconds">
-                        <span class="control-icon">⏩</span>
-                        <span class="control-label">+10s</span>
-                    </button>
-                </div>
+        <div class="relative w-full max-w-[400px] aspect-[9/16] bg-black rounded-[2rem] overflow-hidden border border-white/10 video-glow">
+            <div id="loading" class="absolute inset-0 flex flex-col items-center justify-center space-y-4 z-10 bg-background-dark">
+                <div class="spinner"></div>
+                <p class="text-slate-500 font-medium">
+                    <span class="lang-label lang-en">Loading video...</span>
+                    <span class="lang-label lang-fr">Chargement...</span>
+                </p>
+            </div>
+            
+            <video id="tutorial-video" class="w-full h-full object-contain" controls autoplay muted playsinline preload="auto" style="display: none;">
+                <source src="/img/IntroEN-V2.mp4" type="video/mp4">
+            </video>
+            
+            <!-- Skip controls -->
+            <div id="custom-controls" class="absolute bottom-12 left-1/2 -translate-x-1/2 flex gap-4 z-20" style="display: none;">
+                <button onclick="skipBackward()" class="w-14 h-14 rounded-full glass-panel flex flex-col items-center justify-center hover:bg-white/10 transition-all border-white/20">
+                    <span class="material-icons-round">replay_10</span>
+                </button>
+                <button onclick="skipForward()" class="w-14 h-14 rounded-full glass-panel flex flex-col items-center justify-center hover:bg-white/10 transition-all border-white/20">
+                    <span class="material-icons-round">forward_10</span>
+                </button>
             </div>
         </div>
-    </div>
+
+    </main>
+
+    <footer class="py-8 text-center text-slate-600 text-sm">
+        <p>&copy; 2025 Xavier Larrodé. All rights reserved.</p>
+    </footer>
 
     <script>
         // Detect language
         const userLang = navigator.language || navigator.userLanguage;
         const isFrench = userLang.startsWith('fr');
-        
-        // Apply language class
         document.body.classList.add(isFrench ? 'is-lang-fr' : 'is-lang-en');
         
-        // Set video source based on language
         const video = document.getElementById('tutorial-video');
-        const videoSource = video.querySelector('source');
-        videoSource.src = isFrench ? 'img/TutoTT-FR.mp4' : 'img/TutoTT-EN.mp4';
         
-        // Show video when loaded
+        // Use IntroEN-V2.mp4 for both for now as TutoTT files are not in listing
+        // But we could attempt to load them if they might exist
+        // video.querySelector('source').src = isFrench ? '/img/TutoTT-FR.mp4' : '/img/TutoTT-EN.mp4';
+
         video.addEventListener('loadedmetadata', function() {
             document.getElementById('loading').style.display = 'none';
             video.style.display = 'block';
             document.getElementById('custom-controls').style.display = 'flex';
         });
         
-        // Reload video with correct source
         video.load();
         
-        // Skip controls
-        function skipBackward() {
-            const video = document.getElementById('tutorial-video');
-            video.currentTime = Math.max(0, video.currentTime - 10);
-        }
+        function skipBackward() { video.currentTime = Math.max(0, video.currentTime - 10); }
+        function skipForward() { video.currentTime = Math.min(video.duration, video.currentTime + 10); }
         
-        function skipForward() {
-            const video = document.getElementById('tutorial-video');
-            video.currentTime = Math.min(video.duration, video.currentTime + 10);
-        }
-        
-        // Back button handler
         function goBack() {
-            // If opened from app, try to close
             if (window.history.length > 1) {
                 window.history.back();
             } else {
-                // Fallback to home
-                window.location.href = 'index.html';
+                window.location.href = '/index.html';
             }
         }
-        
-        // Track video plays
-        video.addEventListener('play', function() {
-            if (typeof gtag !== 'undefined') {
-                gtag('event', 'video_play', {
-                    'event_category': 'Tutorial',
-                    'event_label': isFrench ? 'FR' : 'EN'
-                });
-            }
-        });
     </script>
 </body>
 </html>

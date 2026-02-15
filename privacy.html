@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 <head>
     <meta charset="UTF-8">
     <!-- Google tag (gtag.js) -->
@@ -8,7 +8,6 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'G-HKNZ7LV3MC');
     </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,82 +18,106 @@
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
+        darkMode: 'class',
         theme: {
           extend: {
             colors: {
-              'neon-pink': '#FB34FF',
-              'neon-pink-light': '#FF65F9',
-              'neon-cyan': '#66F6FF',
-              'neon-cyan-dark': '#09E8E0',
-              'brand-dark': '#1A1A1A',
-              'brand-accent': '#FFD700',
+              primary: "#FB34FF",
+              cyan: "#66F6FF",
+              "background-dark": "#1A1A1A",
             },
             fontFamily: {
-              sans: ['Inter', 'sans-serif'],
-              display: ['SF Pro Rounded', 'sans-serif'],
+              display: ["Plus Jakarta Sans", "sans-serif"],
+              body: ["Inter", "sans-serif"],
             },
-          }
-        }
-      }
+          },
+        },
+      };
     </script>
+    <style>
+      body {
+        background-color: #1A1A1A;
+      }
+      .glass-panel {
+        background: rgba(42, 42, 42, 0.7);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+    </style>
 </head>
-<body class="bg-brand-dark text-white font-sans">
+<body class="bg-background-dark text-slate-100 font-body antialiased selection:bg-primary selection:text-white">
 
     <!-- Header -->
-    <header class="container mx-auto px-6 py-4 flex justify-between items-center">
-        <div class="flex items-center">
-            <a href="index.html" class="flex items-center">
-                <img src="img/TagTrackAlpha.png" alt="TagTrack Logo" class="h-10 w-10 mr-3">
-                <h1 class="font-display text-2xl font-bold">TagTrack</h1>
+    <header class="fixed top-0 w-full z-50 glass-panel border-b border-white/5 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-3">
+                <img src="/img/TagTrackAlpha.png" alt="TagTrack Logo" class="w-10 h-10">
+                <span class="font-display font-extrabold text-2xl tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-primary to-cyan">
+                    TagTrack
+                </span>
             </a>
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="index.html" class="text-sm font-semibold text-slate-300 hover:text-primary transition-colors">Home</a>
+                <a href="blog.html" class="text-sm font-semibold text-slate-300 hover:text-primary transition-colors">Blog</a>
+                <a href="support.html" class="text-sm font-semibold text-slate-300 hover:text-primary transition-colors">Support</a>
+            </nav>
         </div>
-        <nav>
-            <a href="index.html#features" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Features</a>
-            <a href="index.html#pricing" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Pricing</a>
-            <a href="support.html" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Support</a>
-        </nav>
     </header>
 
-    <!-- Main Content -->
-    <main class="container mx-auto px-6 py-16">
-        <h2 class="text-3xl font-bold font-display mb-6">Privacy Policy</h2>
-        <div class="prose prose-invert max-w-none text-gray-300">
-            <p>Last Updated: October 23, 2025</p>
+    <main class="pt-32 pb-20 px-4">
+        <div class="max-w-3xl mx-auto space-y-12">
             
-            <p>Your privacy is important to us. At TagTrack, we have a fundamental principle: we do not collect or store any of your personal data. All data generated by the app is stored locally on your device and never leaves it.</p>
+            <div class="text-center space-y-4">
+                <h2 class="text-4xl md:text-5xl font-display font-extrabold text-white">Privacy Policy</h2>
+                <p class="text-slate-400">Last Updated: October 23, 2025</p>
+            </div>
 
-            <h3 class="text-xl font-bold mt-6 mb-2">Data Storage</h3>
-            <p>All your habit data, settings, and progress are stored exclusively on your device using Apple's SwiftData framework. We do not have access to this information. If you delete the app, this data will be permanently removed.</p>
+            <div class="glass-panel p-8 md:p-12 rounded-[2.5rem] border-slate-800 prose prose-invert max-w-none prose-headings:font-display prose-headings:text-white prose-p:text-slate-400 prose-a:text-cyan prose-a:no-underline hover:prose-a:underline">
+                
+                <p>Your privacy is important to us. At TagTrack, we have a fundamental principle: we do not collect or store any of your personal data. All data generated by the app is stored locally on your device and never leaves it.</p>
 
-            <h3 class="text-xl font-bold mt-6 mb-2">Third-Party Services</h3>
-            <p>We use RevenueCat for managing premium subscriptions. RevenueCat may collect anonymous, non-personally-identifiable information for the purpose of processing payments and ensuring subscription access across your devices. Please refer to the <a href="https://www.revenuecat.com/privacy" target="_blank" class="text-neon-cyan hover:underline">RevenueCat Privacy Policy</a> for more details.</p>
+                <h3>Data Storage</h3>
+                <p>All your habit data, settings, and progress are stored exclusively on your device using Apple's SwiftData framework. We do not have access to this information. If you delete the app, this data will be permanently removed.</p>
 
-            <h3 class="text-xl font-bold mt-6 mb-2">Permissions</h3>
-            <p>TagTrack requires access to the NFC reader on your device to function. This permission is used solely for scanning NFC tags to log your habits. The app does not require access to your microphone, location, contacts, or any other personal information.</p>
+                <h3>Third-Party Services</h3>
+                <p>We use RevenueCat for managing premium subscriptions. RevenueCat may collect anonymous, non-personally-identifiable information for the purpose of processing payments and ensuring subscription access across your devices. Please refer to the <a href="https://www.revenuecat.com/privacy" target="_blank">RevenueCat Privacy Policy</a> for more details.</p>
 
-            <h3 class="text-xl font-bold mt-6 mb-2">Changes to This Policy</h3>
-            <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page. You are advised to review this Privacy Policy periodically for any changes.</p>
+                <h3>Permissions</h3>
+                <p>TagTrack requires access to the NFC reader on your device to function. This permission is used solely for scanning NFC tags to log your habits. The app does not require access to your microphone, location, contacts, or any other personal information.</p>
 
-            <h3 class="text-xl font-bold mt-6 mb-2">Contact Us</h3>
-            <p>If you have any questions about this Privacy Policy, you can contact us at: <a href="mailto:xlarrodeapp+tagtrack@gmail.com" class="text-neon-cyan hover:underline">xlarrodeapp+tagtrack@gmail.com</a></p>
+                <h3>Changes to This Policy</h3>
+                <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page. You are advised to review this Privacy Policy periodically for any changes.</p>
+
+                <h3>Contact Us</h3>
+                <p>If you have any questions about this Privacy Policy, you can contact us at: <a href="mailto:xlarrodeapp+tagtrack@gmail.com">xlarrodeapp+tagtrack@gmail.com</a></p>
+            </div>
+
         </div>
     </main>
 
-    <!-- Footer -->
-    <footer class="bg-gray-900 py-8">
-        <div class="container mx-auto px-6 text-center text-gray-400">
-            <div class="mb-4">
-                <a href="privacy.html" class="hover:text-white px-3">Privacy Policy</a>
-                <a href="eula.html" class="hover:text-white px-3">Terms of Service</a>
-                <a href="support.html" class="hover:text-white px-3">Support</a>
+    <footer class="py-12 border-t border-slate-800 bg-background-dark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
+            <div class="flex justify-center gap-3">
+                <img src="/img/TagTrackAlpha.png" alt="TagTrack Logo" class="w-8 h-8">
+                <span class="font-display font-bold text-xl tracking-tight text-white">TagTrack</span>
             </div>
-            <p>&copy; 2025 Xavier Larrodé. All rights reserved.</p>
+            <div class="flex flex-wrap justify-center gap-6 text-slate-500">
+                <a href="index.html" class="hover:text-primary transition-colors">Home</a>
+                <a href="support.html" class="hover:text-primary transition-colors">Support</a>
+                <a href="eula.html" class="hover:text-primary transition-colors">Terms of Service</a>
+            </div>
+            <p class="text-slate-600 text-sm">&copy; 2025 Xavier Larrodé. All rights reserved.</p>
         </div>
     </footer>
 

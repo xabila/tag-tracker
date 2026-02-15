@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 <head>
     <meta charset="UTF-8">
     <!-- Google tag (gtag.js) -->
@@ -8,7 +8,6 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'G-HKNZ7LV3MC');
     </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -37,452 +36,69 @@
     <meta property="twitter:description" content="Tap to build better habits. The next-generation habit tracker built for instant action.">
     <meta property="twitter:image" content="https://tag-track.app/img/TagTrackAlpha.png">
 
-    <!-- Schema.org Structured Data -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "MobileApplication",
-      "name": "TagTrack",
-      "applicationCategory": "ProductivityApplication",
-      "operatingSystem": "iOS",
-      "description": "NFC-powered habit tracker for iOS. Tap NFC stickers on everyday objects to instantly log habits and build streaks. Simple, fast habit tracking.",
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "USD"
-      },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "1"
-      },
-      "author": {
-        "@type": "Person",
-        "name": "Xavier Larrodé"
-      },
-      "image": "https://tag-track.app/img/TagTrackAlpha.png",
-      "url": "https://tag-track.app/",
-      "downloadUrl": "https://apps.apple.com/app/id6754224455",
-      "installUrl": "https://apps.apple.com/app/id6754224455"
-    }
-    </script>
-
-    <!-- Organization Schema -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "TagTrack",
-      "url": "https://tag-track.app/",
-      "logo": "https://tag-track.app/img/TagTrackAlpha.png",
-      "sameAs": []
-    }
-    </script>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
+      rel="stylesheet"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
+        darkMode: 'class',
         theme: {
           extend: {
             colors: {
-              'neon-pink': '#FB34FF',
-              'neon-pink-light': '#FF65F9',
-              'neon-cyan': '#66F6FF',
-              'neon-cyan-dark': '#09E8E0',
-              'brand-dark': '#1A1A1A',
-              'brand-accent': '#FFD700',
+              primary: "#FB34FF",
+              "primary-light": "#FF65F9",
+              cyan: "#66F6FF",
+              "cyan-dark": "#09E8E0",
+              "background-dark": "#1A1A1A",
+              "card-dark": "#2A2A2A",
             },
             fontFamily: {
-              sans: ['Inter', 'sans-serif'],
-              display: ['SF Pro Rounded', 'sans-serif'],
+              display: ["Plus Jakarta Sans", "sans-serif"],
+              body: ["Inter", "sans-serif"],
             },
-          }
-        }
-      }
+            animation: {
+              'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            }
+          },
+        },
+      };
     </script>
-    
     <style>
-        .lang-fr, .lang-en, .lang-es, .lang-pt, .lang-de { display: none; }
-        .is-lang-fr .lang-fr { display: inline; }
-        .is-lang-en .lang-en { display: inline; }
-        .is-lang-es .lang-es { display: inline; }
-        .is-lang-pt .lang-pt { display: inline; }
-        .is-lang-de .lang-de { display: inline; }
-        /* Handle block elements that might be used */
-        .is-lang-fr .lang-fr.block-element { display: block; }
-        .is-lang-en .lang-en.block-element { display: block; }
-        .is-lang-es .lang-es.block-element { display: block; }
-        .is-lang-pt .lang-pt.block-element { display: block; }
-        .is-lang-de .lang-de.block-element { display: block; }
+      body {
+        background-color: #1A1A1A;
+      }
+      .neon-text {
+        text-shadow: 0 0 10px rgba(251, 52, 255, 0.5), 0 0 20px rgba(251, 52, 255, 0.3);
+      }
+      .glass-panel {
+        background: rgba(42, 42, 42, 0.7);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
     </style>
 
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "MobileApplication",
-      "name": "TagTrack",
-      "alternateName": "TagTrack – NFC Habit Tracker",
-      "description": "TagTrack is the next-generation habit tracker built for instant action. Place NFC stickers on everyday objects and simply tap to log your habit in a second.",
-      "url": "https://tag-track.app",
-      "applicationCategory": "ProductivityApplication",
-      "operatingSystem": "iOS",
-      "downloadUrl": "https://apps.apple.com/app/id6754224455",
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "EUR"
-      },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "1"
-      }
-    }
-    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/"
+  }
+}
+</script>
+  <script type="module" crossorigin src="/assets/index-i6LRB2Zg.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-C6G_3qQV.css">
 </head>
-<body class="bg-brand-dark text-white font-sans">
-
-    <!-- Header -->
-    <header class="container mx-auto px-6 py-4 flex justify-between items-center">
-        <div class="flex items-center">
-            <img src="img/TagTrackAlpha.png" alt="TagTrack Logo" class="h-10 w-10 mr-3">
-            <h1 class="font-display text-2xl font-bold">TagTrack</h1>
-        </div>
-        <nav>
-            <a href="#features" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
-                <span class="lang-en">Features</span>
-                <span class="lang-fr">Fonctionnalités</span>
-                <span class="lang-es">Características</span>
-                <span class="lang-pt">Funcionalidades</span>
-                <span class="lang-de">Funktionen</span>
-            </a>
-            <a href="#pricing" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
-                <span class="lang-en">Pricing</span>
-                <span class="lang-fr">Tarifs</span>
-                <span class="lang-es">Precios</span>
-                <span class="lang-pt">Preços</span>
-                <span class="lang-de">Preise</span>
-            </a>
-            <a href="blog.html" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Blog</a>
-            <a href="tutorial.html" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
-                <span class="lang-en">Tutorial</span>
-                <span class="lang-fr">Tutoriel</span>
-                <span class="lang-es">Tutorial</span>
-                <span class="lang-pt">Tutorial</span>
-                <span class="lang-de">Tutorial</span>
-            </a>
-            <a href="support.html" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Support</a>
-        </nav>
-    </header>
-
-    <!-- Hero Section -->
-    <main class="container mx-auto px-6 py-16 text-center">
-        <h2 class="text-4xl md:text-6xl font-bold font-display leading-tight mb-4">
-            <span class="lang-en">Tap to build better habits.</span>
-            <span class="lang-fr">Routines en un scan.</span>
-            <span class="lang-es">Rutinas en un toque.</span>
-            <span class="lang-pt">Rotinas num toque.</span>
-            <span class="lang-de">Routinen mit einem Scan.</span>
-        </h2>
-        <p class="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl mx-auto block-element lang-en">TagTrack turns everyday objects into habit trackers. Tap an NFC sticker, instantly log your habit, and watch your streaks grow. No friction. Pure feedback.</p>
-        <p class="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl mx-auto block-element lang-fr">TagTrack est l'app de suivi d'habitudes nouvelle génération conçu pour l'action instantanée. Placez des autocollants NFC sur vos objets du quotidien et enregistrez vos habitudes d'un simple geste.</p>
-        <p class="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl mx-auto block-element lang-es">TagTrack convierte objetos cotidianos en seguidores de hábitos. Escanea una etiqueta NFC, registra tu hábito al instante y observa cómo crecen tus rachas.</p>
-        <p class="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl mx-auto block-element lang-pt">TagTrack transforma objetos cotidianos em rastreadores. Escaneie uma etiqueta NFC, registre o hábito num instante e veja suas sequências crescerem.</p>
-        <p class="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl mx-auto block-element lang-de">TagTrack macht Alltagsgegenstände zu Trackern. Scannen Sie einen NFC-Sticker, loggen Sie Ihre Gewohnheit sofort und beobachten Sie Ihren Fortschritt.</p>
-        
-        <a href="https://apps.apple.com/app/id6754224455" target="_blank" class="bg-neon-pink text-white font-bold py-3 px-8 rounded-full hover:bg-neon-pink-light transition duration-300 inline-block mb-12">
-            <span class="lang-en">Download on the App Store</span>
-            <span class="lang-fr">Télécharger dans l'App Store</span>
-            <span class="lang-es">Descargar en el App Store</span>
-            <span class="lang-pt">Baixar na App Store</span>
-            <span class="lang-de">Laden im App Store</span>
-        </a>
-
-        <!-- Mascots -->
-        <div class="flex justify-center gap-12 items-center">
-             <img src="img/tagtrack_coffee.png" alt="Mascot Coffee" class="h-32 w-auto animate-bounce" style="animation-duration: 3s;">
-             <img src="img/tagtrack_qrcode.png" alt="Mascot QR" class="h-32 w-auto animate-pulse" style="animation-duration: 4s;">
-        </div>
-    </main>
-
-    <!-- Features Section -->
-    <section id="features" class="py-20 bg-gray-900">
-        <div class="container mx-auto px-6">
-            <h3 class="text-3xl font-bold text-center mb-12">
-                <span class="lang-en">Core Features</span>
-                <span class="lang-fr">Fonctionnalités Clés</span>
-                <span class="lang-es">Características Principales</span>
-                <span class="lang-pt">Principais Recursos</span>
-                <span class="lang-de">Hauptfunktionen</span>
-            </h3>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-8">
-                <!-- Feature 1 -->
-                <div class="bg-brand-dark p-6 rounded-lg text-center">
-                    <img id="feature-img-1" src="img/ZeroSceen-EN.jpg" alt="NFC Scan Demo" class="rounded-md mb-4">
-                    <h4 class="text-xl font-bold mb-2 block-element">
-                        <span class="lang-en">Instant NFC Scanning</span>
-                        <span class="lang-fr">Scan NFC Instantané</span>
-                        <span class="lang-es">Escaneo NFC Instantáneo</span>
-                        <span class="lang-pt">Escaneamento NFC Instantâneo</span>
-                        <span class="lang-de">Sofortiger NFC-Scan</span>
-                    </h4>
-                    <p class="text-gray-400 block-element">
-                        <span class="lang-en">One tap = instant habit log. No forms, no input screens.</span>
-                        <span class="lang-fr">Un scan = un suivi. Simple et rapide.</span>
-                        <span class="lang-es">Un toque = registro instantáneo. Sin formularios.</span>
-                        <span class="lang-pt">Um toque = registro instantâneo. Sem formulários.</span>
-                        <span class="lang-de">Ein Tippen = sofortiges Protokoll. Keine Formulare.</span>
-                    </p>
-                </div>
-                <!-- Feature 2 -->
-                <div class="bg-brand-dark p-6 rounded-lg text-center">
-                    <img id="feature-img-2" src="img/SecondSceen-EN.jpg" alt="Habit Library" class="rounded-md mb-4">
-                    <h4 class="text-xl font-bold mb-2 block-element">
-                        <span class="lang-en">Habit Library</span>
-                        <span class="lang-fr">Bibliothèque d'Habitudes</span>
-                        <span class="lang-es">Biblioteca de Hábitos</span>
-                        <span class="lang-pt">Biblioteca de Hábitos</span>
-                        <span class="lang-de">Gewohnheitsbibliothek</span>
-                    </h4>
-                    <p class="text-gray-400 block-element">
-                        <span class="lang-en">Choose from presets or create your own custom habits.</span>
-                        <span class="lang-fr">Choisissez des habitudes prêtes à l'emploi ou créez les vôtres.</span>
-                        <span class="lang-es">Elige preajustes o crea los tuyos.</span>
-                        <span class="lang-pt">Escolha predefinições ou crie as suas.</span>
-                        <span class="lang-de">Wählen Sie Vorlagen oder erstellen Sie eigene.</span>
-                    </p>
-                </div>
-                <!-- Feature 3 -->
-                <div class="bg-brand-dark p-6 rounded-lg text-center">
-                    <img id="feature-img-3" src="img/ThirdSceen-EN.jpg" alt="Gamification" class="rounded-md mb-4">
-                    <h4 class="text-xl font-bold mb-2 block-element">
-                        <span class="lang-en">Gamification System</span>
-                        <span class="lang-fr">Système de Gamification</span>
-                        <span class="lang-es">Gamificación</span>
-                        <span class="lang-pt">Gamificação</span>
-                        <span class="lang-de">Gamification</span>
-                    </h4>
-                    <p class="text-gray-400 block-element">
-                        <span class="lang-en">Earn XP, unlock badges, and build streaks to stay motivated.</span>
-                        <span class="lang-fr">Gagnez des points, débloquez des badges et suivez vos séries.</span>
-                        <span class="lang-es">Gana XP, desbloquea insignias y rachas.</span>
-                        <span class="lang-pt">Ganhe XP, desbloqueie emblemas e sequências.</span>
-                        <span class="lang-de">Sammeln Sie XP und Abzeichen.</span>
-                    </p>
-                </div>
-                <!-- Feature 4 -->
-                <div class="bg-brand-dark p-6 rounded-lg text-center">
-                    <img id="feature-img-4" src="img/FourSceen-EN.jpg" alt="Analytics Dashboard" class="rounded-md mb-4">
-                    <h4 class="text-xl font-bold mb-2 block-element">
-                        <span class="lang-en">Analytics Dashboard</span>
-                        <span class="lang-fr">Tableau de Bord Analytique</span>
-                        <span class="lang-es">Panel de Análisis</span>
-                        <span class="lang-pt">Painel de Análise</span>
-                        <span class="lang-de">Analyse-Dashboard</span>
-                    </h4>
-                    <p class="text-gray-400 block-element">
-                        <span class="lang-en">Visualize your progress with insightful charts and stats.</span>
-                        <span class="lang-fr">Visualisez vos progrès avec des graphiques et statistiques.</span>
-                        <span class="lang-es">Visualiza tu progreso con gráficos.</span>
-                        <span class="lang-pt">Visualize seu progresso com gráficos.</span>
-                        <span class="lang-de">Visualisieren Sie Ihren Fortschritt.</span>
-                    </p>
-                </div>
-                <!-- Feature 5 -->
-                <div class="bg-brand-dark p-6 rounded-lg text-center">
-                    <img id="feature-img-5" src="img/FiveSceen-EN.jpg" alt="Home Screen Widgets" class="rounded-md mb-4">
-                    <h4 class="text-xl font-bold mb-2 block-element">
-                        <span class="lang-en">Home Screen Widgets</span>
-                        <span class="lang-fr">Widgets Écran d'Accueil</span>
-                        <span class="lang-es">Widgets de Pantalla</span>
-                        <span class="lang-pt">Widgets da Tela</span>
-                        <span class="lang-de">Homescreen-Widgets</span>
-                    </h4>
-                    <p class="text-gray-400 block-element">
-                        <span class="lang-en">Track your habits directly from your home screen.</span>
-                        <span class="lang-fr">Suivez vos habitudes directement depuis votre écran d'accueil.</span>
-                        <span class="lang-es">Sigue tus hábitos desde la pantalla de inicio.</span>
-                        <span class="lang-pt">Acompanhe seus hábitos da tela inicial.</span>
-                        <span class="lang-de">Tracken Sie direkt vom Startbildschirm.</span>
-                    </p>
-                </div>
-                <!-- Feature 6 -->
-                <div class="bg-brand-dark p-6 rounded-lg text-center">
-                    <img id="feature-img-6" src="img/SixScreen-EN.jpg" alt="QR Code Scanning" class="rounded-md mb-4">
-                    <h4 class="text-xl font-bold mb-2 block-element">
-                        <span class="lang-en">QR Code Support</span>
-                        <span class="lang-fr">Support QR Code</span>
-                        <span class="lang-es">Soporte Código QR</span>
-                        <span class="lang-pt">Suporte Código QR</span>
-                        <span class="lang-de">QR-Code-Support</span>
-                    </h4>
-                    <p class="text-gray-400 block-element">
-                        <span class="lang-en">No NFC? Scan QR codes to track your habits anywhere.</span>
-                        <span class="lang-fr">Pas de NFC ? Scannez des QR codes pour suivre vos habitudes partout.</span>
-                        <span class="lang-es">¿Sin NFC? Escanea códigos QR.</span>
-                        <span class="lang-pt">Sem NFC? Escaneie códigos QR.</span>
-                        <span class="lang-de">Kein NFC? Scannen Sie QR-Codes.</span>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Video Demo Section -->
-    <section class="py-20 text-center">
-        <div class="container mx-auto px-6">
-             <h3 class="text-3xl font-bold mb-12">
-                <span class="lang-en">See it in Action</span>
-                <span class="lang-fr">Voir en Action</span>
-                <span class="lang-es">Ver en Acción</span>
-                <span class="lang-pt">Ver em Ação</span>
-                <span class="lang-de">In Aktion sehen</span>
-            </h3>
-            <div class="max-w-xs mx-auto">
-                <video id="intro-video" class="rounded-lg shadow-2xl w-full" autoplay loop muted playsinline>
-                    <source src="img/IntroEN-V2.mp4" type="video/mp4">
-                </video>
-            </div>
-        </div>
-    </section>
-
-    <!-- Pricing Section -->
-    <section id="pricing" class="py-20">
-        <div class="container mx-auto px-6 text-center">
-            <h3 class="text-3xl font-bold mb-12">
-                <span class="lang-en">Pricing</span>
-                <span class="lang-fr">Tarifs</span>
-                <span class="lang-es">Precios</span>
-                <span class="lang-pt">Preços</span>
-                <span class="lang-de">Preise</span>
-            </h3>
-            <div class="flex flex-col md:flex-row justify-center gap-8">
-                <!-- Free Tier -->
-                <div class="bg-gray-900 p-8 rounded-lg md:w-1/3">
-                    <h4 class="text-2xl font-bold mb-4">
-                        <span class="lang-en">Free</span>
-                        <span class="lang-fr">Gratuit</span>
-                        <span class="lang-es">Gratis</span>
-                        <span class="lang-pt">Grátis</span>
-                        <span class="lang-de">Gratis</span>
-                    </h4>
-                    <p class="text-5xl font-bold mb-4">€0</p>
-                    <ul class="text-left space-y-2 text-gray-400">
-                        <li>✓ <span class="lang-en">Up to 3 habits</span><span class="lang-fr">Jusqu'à 3 habitudes</span><span class="lang-es">Hasta 3 hábitos</span><span class="lang-pt">Até 3 hábitos</span><span class="lang-de">Bis zu 3 Gewohnheiten</span></li>
-                        <li>✓ <span class="lang-en">Basic tracking</span><span class="lang-fr">Suivi de base</span><span class="lang-es">Seguimiento básico</span><span class="lang-pt">Rastreamento básico</span><span class="lang-de">Basis-Tracking</span></li>
-                        <li>✓ <span class="lang-en">1-month history</span><span class="lang-fr">Historique d'un mois</span><span class="lang-es">Historial de 1 mes</span><span class="lang-pt">Histórico de 1 mês</span><span class="lang-de">1 Monat Verlauf</span></li>
-                    </ul>
-                </div>
-                <!-- Premium Tier -->
-                <div class="bg-gray-900 p-8 rounded-lg border-2 border-neon-cyan md:w-1/3">
-                    <h4 class="text-2xl font-bold mb-4">Premium</h4>
-                    <p class="text-5xl font-bold mb-4">€9.99<span class="text-lg">/year</span></p>
-                    <ul class="text-left space-y-2 text-gray-400">
-                        <li>✓ <span class="lang-en">Unlimited habits</span><span class="lang-fr">Habitudes illimitées</span><span class="lang-es">Hábitos ilimitados</span><span class="lang-pt">Hábitos ilimitados</span><span class="lang-de">Unbegrenzte Gewohnheiten</span></li>
-                        <li>✓ <span class="lang-en">Full gamification</span><span class="lang-fr">Gamification complète</span><span class="lang-es">Gamificación completa</span><span class="lang-pt">Gamificação completa</span><span class="lang-de">Volle Gamification</span></li>
-                        <li>✓ <span class="lang-en">Advanced analytics</span><span class="lang-fr">Analyses avancées</span><span class="lang-es">Análisis avanzado</span><span class="lang-pt">Análise avançada</span><span class="lang-de">Erweiterte Analysen</span></li>
-                        <li>✓ <span class="lang-en">Unlimited NFC tags</span><span class="lang-fr">Tags NFC illimités</span><span class="lang-es">Etiquetas NFC ilimitadas</span><span class="lang-pt">Tags NFC ilimitadas</span><span class="lang-de">Unbegrenzte NFC-Tags</span></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-gray-900 py-8">
-        <div class="container mx-auto px-6 text-center text-gray-400">
-            <div class="mb-4">
-                <a href="blog.html" class="hover:text-white px-3">Blog</a>
-                <a href="tutorial.html" class="hover:text-white px-3">
-                    <span class="lang-en">Tutorial</span>
-                    <span class="lang-fr">Tutoriel</span>
-                    <span class="lang-es">Tutorial</span>
-                    <span class="lang-pt">Tutorial</span>
-                    <span class="lang-de">Tutorial</span>
-                </a>
-                <a href="privacy.html" class="hover:text-white px-3">
-                    <span class="lang-en">Privacy Policy</span>
-                    <span class="lang-fr">Politique de Confidentialité</span>
-                    <span class="lang-es">Política de Privacidad</span>
-                    <span class="lang-pt">Política de Privacidade</span>
-                    <span class="lang-de">Datenschutzerklärung</span>
-                </a>
-                <a href="eula.html" class="hover:text-white px-3">
-                    <span class="lang-en">Terms of Service</span>
-                    <span class="lang-fr">Conditions d'Utilisation</span>
-                    <span class="lang-es">Términos de Servicio</span>
-                    <span class="lang-pt">Termos de Serviço</span>
-                    <span class="lang-de">Nutzungsbedingungen</span>
-                </a>
-                <a href="support.html" class="hover:text-white px-3">Support</a>
-            </div>
-            <div class="mb-4 flex justify-center gap-5">
-                <a href="https://www.facebook.com/people/TagTrack/61583332376080/?locale=fr_FR" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors" aria-label="Facebook">
-                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-                </a>
-                <a href="https://x.com/tagtrackapp" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors" aria-label="X (Twitter)">
-                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-                </a>
-            </div>
-            <p>&copy; 2025 Xavier Larrodé. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            // Helper to get URL params for testing: ?lang=es
-            const urlParams = new URLSearchParams(window.location.search);
-            const forcedLang = urlParams.get('lang');
-
-            const userLang = navigator.language || navigator.userLanguage;
-            const body = document.body;
-            
-            let currentLang = 'en';
-
-            if (forcedLang && ['en', 'fr', 'es', 'pt', 'de'].includes(forcedLang)) {
-                currentLang = forcedLang;
-            } else if (userLang.startsWith('fr')) currentLang = 'fr';
-            else if (userLang.startsWith('es')) currentLang = 'es';
-            else if (userLang.startsWith('pt')) currentLang = 'pt';
-            else if (userLang.startsWith('de')) currentLang = 'de';
-
-            body.classList.add(`is-lang-${currentLang}`);
-            
-            /*
-            // Update video - Disabled as we only have EN video for now
-            if (currentLang === 'fr') {
-                const video = document.getElementById('intro-video');
-                if (video) {
-                    video.querySelector('source').src = 'img/IntroFR-V2.mp4';
-                    video.load();
-                }
-            }
-            */
-            
-            // Check if language is not EN, then try to load localized images
-            if (currentLang !== 'en') {
-                const langSuffix = currentLang.toUpperCase();
-                
-                const imageMap = {
-                    'feature-img-1': 'ZeroSceen',
-                    'feature-img-2': 'SecondSceen',
-                    'feature-img-3': 'ThirdSceen',
-                    'feature-img-4': 'FourSceen',
-                    'feature-img-5': 'FiveSceen',
-                    'feature-img-6': 'SixScreen'
-                };
-
-                for (const [id, baseName] of Object.entries(imageMap)) {
-                    const img = document.getElementById(id);
-                    if (img) img.src = `img/${baseName}-${langSuffix}.jpg`;
-                }
-            }
-        });
-    </script>
-
+<body class="bg-slate-50 dark:bg-background-dark text-slate-900 dark:text-slate-100 font-body antialiased selection:bg-primary selection:text-white">
+    <div id="root"></div>
 </body>
 </html>

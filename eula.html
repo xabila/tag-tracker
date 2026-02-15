@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 <head>
     <meta charset="UTF-8">
     <!-- Google tag (gtag.js) -->
@@ -8,7 +8,6 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'G-HKNZ7LV3MC');
     </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,85 +18,111 @@
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
+        darkMode: 'class',
         theme: {
           extend: {
             colors: {
-              'neon-pink': '#FB34FF',
-              'neon-pink-light': '#FF65F9',
-              'neon-cyan': '#66F6FF',
-              'neon-cyan-dark': '#09E8E0',
-              'brand-dark': '#1A1A1A',
-              'brand-accent': '#FFD700',
+              primary: "#FB34FF",
+              cyan: "#66F6FF",
+              "background-dark": "#1A1A1A",
             },
             fontFamily: {
-              sans: ['Inter', 'sans-serif'],
-              display: ['SF Pro Rounded', 'sans-serif'],
+              display: ["Plus Jakarta Sans", "sans-serif"],
+              body: ["Inter", "sans-serif"],
             },
-          }
-        }
-      }
+          },
+        },
+      };
     </script>
+    <style>
+      body {
+        background-color: #1A1A1A;
+      }
+      .glass-panel {
+        background: rgba(42, 42, 42, 0.7);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+    </style>
 </head>
-<body class="bg-brand-dark text-white font-sans">
+<body class="bg-background-dark text-slate-100 font-body antialiased selection:bg-primary selection:text-white">
 
     <!-- Header -->
-    <header class="container mx-auto px-6 py-4 flex justify-between items-center">
-        <div class="flex items-center">
-            <a href="index.html" class="flex items-center">
-                <img src="img/TagTrackAlpha.png" alt="TagTrack Logo" class="h-10 w-10 mr-3">
-                <h1 class="font-display text-2xl font-bold">TagTrack</h1>
+    <header class="fixed top-0 w-full z-50 glass-panel border-b border-white/5 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-3">
+                <img src="/img/TagTrackAlpha.png" alt="TagTrack Logo" class="w-10 h-10">
+                <span class="font-display font-extrabold text-2xl tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-primary to-cyan">
+                    TagTrack
+                </span>
             </a>
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="index.html" class="text-sm font-semibold text-slate-300 hover:text-primary transition-colors">Home</a>
+                <a href="blog.html" class="text-sm font-semibold text-slate-300 hover:text-primary transition-colors">Blog</a>
+                <a href="support.html" class="text-sm font-semibold text-slate-300 hover:text-primary transition-colors">Support</a>
+            </nav>
         </div>
-        <nav>
-            <a href="index.html#features" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Features</a>
-            <a href="index.html#pricing" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Pricing</a>
-            <a href="support.html" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Support</a>
-        </nav>
     </header>
 
-    <!-- Main Content -->
-    <main class="container mx-auto px-6 py-16">
-        <h2 class="text-3xl font-bold font-display mb-6">Terms of Service (EULA)</h2>
-        <div class="prose prose-invert max-w-none text-gray-300">
-            <p>Last Updated: October 23, 2025</p>
+    <main class="pt-32 pb-20 px-4">
+        <div class="max-w-3xl mx-auto space-y-12">
+            
+            <div class="text-center space-y-4">
+                <h2 class="text-4xl md:text-5xl font-display font-extrabold text-white">Terms of Service</h2>
+                <p class="text-slate-400">End User License Agreement (EULA)</p>
+            </div>
 
-            <p>This End-User License Agreement ("EULA") is a legal agreement between you and Xavier Larrodé ("the Developer") for the TagTrack mobile application ("the App").</p>
+            <div class="glass-panel p-8 md:p-12 rounded-[2.5rem] border-slate-800 prose prose-invert max-w-none prose-headings:font-display prose-headings:text-white prose-p:text-slate-400 prose-a:text-cyan prose-a:no-underline hover:prose-a:underline">
+                
+                <p>Last Updated: October 23, 2025</p>
 
-            <p>By downloading, installing, or using the App, you agree to be bound by the terms of this EULA. If you do not agree to the terms of this EULA, do not download, install, or use the App.</p>
+                <p>This End-User License Agreement ("EULA") is a legal agreement between you and Xavier Larrodé ("the Developer") for the TagTrack mobile application ("the App").</p>
 
-            <h3 class="text-xl font-bold mt-6 mb-2">Apple App Store Terms</h3>
-            <p>Your use of the App is also governed by the Apple App Store Terms of Service, which you agree to by using the App Store. In the event of a conflict between this EULA and the Apple App Store Terms of Service, the latter will prevail.</p>
-            <p>You can view Apple's standard EULA here: <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" class="text-neon-cyan hover:underline">Apple Licensed Application End User License Agreement</a>.</p>
+                <p>By downloading, installing, or using the App, you agree to be bound by the terms of this EULA. If you do not agree to the terms of this EULA, do not download, install, or use the App.</p>
 
-            <h3 class="text-xl font-bold mt-6 mb-2">Subscriptions</h3>
-            <p>The App offers subscriptions for premium features. These subscriptions are managed through Apple's App Store and are subject to the terms and conditions of Apple's subscription services. Payment will be charged to your Apple ID account at the confirmation of purchase. The subscription automatically renews unless it is canceled at least 24 hours before the end of the current period.</p>
+                <h3>Apple App Store Terms</h3>
+                <p>Your use of the App is also governed by the Apple App Store Terms of Service, which you agree to by using the App Store. In the event of a conflict between this EULA and the Apple App Store Terms of Service, the latter will prevail.</p>
+                <p>You can view Apple's standard EULA here: <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank">Apple Licensed Application End User License Agreement</a>.</p>
 
-            <h3 class="text-xl font-bold mt-6 mb-2">Disclaimer of Warranty</h3>
-            <p>The App is provided "as is" and "as available" without warranties of any kind. The Developer does not warrant that the App will be uninterrupted or error-free.</p>
+                <h3>Subscriptions</h3>
+                <p>The App offers subscriptions for premium features. These subscriptions are managed through Apple's App Store and are subject to the terms and conditions of Apple's subscription services. Payment will be charged to your Apple ID account at the confirmation of purchase. The subscription automatically renews unless it is canceled at least 24 hours before the end of the current period.</p>
 
-            <h3 class="text-xl font-bold mt-6 mb-2">Limitation of Liability</h3>
-            <p>In no event shall the Developer be liable for any direct, indirect, incidental, special, or consequential damages arising out of the use of or inability to use the App.</p>
+                <h3>Disclaimer of Warranty</h3>
+                <p>The App is provided "as is" and "as available" without warranties of any kind. The Developer does not warrant that the App will be uninterrupted or error-free.</p>
 
-            <h3 class="text-xl font-bold mt-6 mb-2">Contact Us</h3>
-            <p>If you have any questions about this EULA, you can contact us at: <a href="mailto:xlarrodeapp+tagtrack@gmail.com" class="text-neon-cyan hover:underline">xlarrodeapp+tagtrack@gmail.com</a></p>
+                <h3>Limitation of Liability</h3>
+                <p>In no event shall the Developer be liable for any direct, indirect, incidental, special, or consequential damages arising out of the use of or inability to use the App.</p>
+
+                <h3>Contact Us</h3>
+                <p>If you have any questions about this EULA, you can contact us at: <a href="mailto:xlarrodeapp+tagtrack@gmail.com">xlarrodeapp+tagtrack@gmail.com</a></p>
+            </div>
+
         </div>
     </main>
 
-    <!-- Footer -->
-    <footer class="bg-gray-900 py-8">
-        <div class="container mx-auto px-6 text-center text-gray-400">
-            <div class="mb-4">
-                <a href="privacy.html" class="hover:text-white px-3">Privacy Policy</a>
-                <a href="eula.html" class="hover:text-white px-3">Terms of Service</a>
-                <a href="support.html" class="hover:text-white px-3">Support</a>
+    <footer class="py-12 border-t border-slate-800 bg-background-dark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
+            <div class="flex justify-center gap-3">
+                <img src="/img/TagTrackAlpha.png" alt="TagTrack Logo" class="w-8 h-8">
+                <span class="font-display font-bold text-xl tracking-tight text-white">TagTrack</span>
             </div>
-            <p>&copy; 2025 Xavier Larrodé. All rights reserved.</p>
+            <div class="flex flex-wrap justify-center gap-6 text-slate-500">
+                <a href="index.html" class="hover:text-primary transition-colors">Home</a>
+                <a href="support.html" class="hover:text-primary transition-colors">Support</a>
+                <a href="privacy.html" class="hover:text-primary transition-colors">Privacy Policy</a>
+            </div>
+            <p class="text-slate-600 text-sm">&copy; 2025 Xavier Larrodé. All rights reserved.</p>
         </div>
     </footer>
 
