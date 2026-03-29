@@ -68,6 +68,7 @@
         .lang-label { display: none; }
         .is-lang-fr .lang-fr { display: inline; }
         .is-lang-en .lang-en { display: inline; }
+        .is-lang-es .lang-es { display: inline; }
         
         .spinner {
             width: 48px;
@@ -89,8 +90,7 @@
         </button>
         <h1 class="font-display font-bold text-xl">
             <span class="lang-label lang-en">Tutorial</span>
-            <span class="lang-label lang-fr">Tutoriel</span>
-        </h1>
+            <span class="lang-label lang-fr">Tutoriel</span>            <span class="lang-label lang-es">Tutorial</span>        </h1>
     </header>
     
     <main class="flex-1 max-w-7xl mx-auto w-full px-4 py-12 flex flex-col items-center">
@@ -99,10 +99,12 @@
             <h2 class="text-3xl md:text-5xl font-display font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-primary to-cyan">
                 <span class="lang-label lang-en">Master TagTrack</span>
                 <span class="lang-label lang-fr">Maîtriser TagTrack</span>
+                <span class="lang-label lang-es">Dominar TagTrack</span>
             </h2>
             <p class="text-slate-400 text-lg">
                 <span class="lang-label lang-en">Watch this guide to start building better habits with NFC technology.</span>
                 <span class="lang-label lang-fr">Regardez ce guide pour commencer à construire de meilleures habitudes avec la technologie NFC.</span>
+                <span class="lang-label lang-es">Mira esta guía para empezar a construir mejores hábitos con tecnología NFC.</span>
             </p>
         </div>
         
@@ -112,6 +114,7 @@
                 <p class="text-slate-500 font-medium">
                     <span class="lang-label lang-en">Loading video...</span>
                     <span class="lang-label lang-fr">Chargement...</span>
+                    <span class="lang-label lang-es">Cargando...</span>
                 </p>
             </div>
             
@@ -140,13 +143,14 @@
         // Detect language
         const userLang = navigator.language || navigator.userLanguage;
         const isFrench = userLang.startsWith('fr');
-        document.body.classList.add(isFrench ? 'is-lang-fr' : 'is-lang-en');
+        const isSpanish = userLang.startsWith('es');
+        const langClass = isFrench ? 'is-lang-fr' : isSpanish ? 'is-lang-es' : 'is-lang-en';
+        document.body.classList.add(langClass);
         
         const video = document.getElementById('tutorial-video');
         
-        // Use IntroEN-V2.mp4 for both for now as TutoTT files are not in listing
-        // But we could attempt to load them if they might exist
-        // video.querySelector('source').src = isFrench ? '/img/TutoTT-FR.mp4' : '/img/TutoTT-EN.mp4';
+        const videoSrc = isFrench ? '/img/TT-Video_FR.mp4' : isSpanish ? '/img/TT-Video_ES.mp4' : '/img/TTVideo_EN.mp4';
+        video.querySelector('source').src = videoSrc;
 
         video.addEventListener('loadedmetadata', function() {
             document.getElementById('loading').style.display = 'none';
