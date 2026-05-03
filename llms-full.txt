@@ -1,0 +1,91 @@
+# TagTrack — Phygital NFC Habit Tracker (Full Context)
+
+> Track your habits by touching real objects. Tap NFC or scan QR. Logged in 2 seconds.
+
+TagTrack is a phygital (physical + digital) habit tracker for iOS.
+It turns everyday objects into habit buttons using NFC tags and QR codes.
+No need to open an app — just tap a sticker on your water bottle, gym bag, or pill box.
+
+## Why TagTrack
+
+- Under 2 seconds to log any habit
+- No app opening required — NFC works from lock screen
+- Real-world reminders — tags on physical objects
+- Gamification — XP, badges, levels, streaks
+- 100% offline — all data stays on device + iCloud
+- Privacy-first — no data collection, no ads
+
+## Core Features
+
+- **NFC Instant Tap**: Program any NFC tag to log a habit instantly, even from lock screen
+- **QR Code Support**: Generate and print QR codes for free from the app
+- **iOS Widgets**: One-tap logging directly from your iPhone home screen
+- **Statistics & Streaks**: XP system, levels (Beginner → Legend → Grandmaster), contribution heatmaps, weekly/monthly/yearly views
+- **Habit Library**: Hundreds of presets (water, vitamins, exercise, reading, meditation…) + fully custom habits
+- **Gamification**: Badges, daily/weekly streaks, fire counters, level progression
+- **Themes & Skins**: Customizable app appearance with premium themes
+
+## How It Works
+
+1. **Pick your habit** — Select from hundreds of presets or create your own custom tracking goal
+2. **Link a Tag or QR** — Hold your phone near an NFC sticker or generate a QR code to link your habit
+3. **Tap to Log** — Whenever you complete the habit, just tap the sticker. Done in under 2 seconds!
+
+## Use Cases
+
+- **Water bottle** → track hydration (e.g., "Water 2/8" glasses)
+- **Vitamin pill box** → never forget your daily dose
+- **Gym bag** → log workout sessions automatically
+- **Desk** → start study or focus sessions
+- **Bathroom mirror** → skincare routine tracking
+- **Coffee machine** → monitor caffeine intake
+- **Medicine cabinet** → medication adherence
+
+## Platform & Pricing
+
+- **Platform**: iOS (iPhone) — Available on the App Store
+- **Download**: https://apps.apple.com/app/id6754224455
+- **Free tier**: Up to 3 habits with core NFC/QR tracking
+- **Pro**: €9.99/year — unlimited habits, advanced stats, premium themes, all widgets
+
+## Languages
+
+English, French (Français), Spanish (Español), Portuguese (Português), German (Deutsch)
+
+## Video Demos
+
+TagTrack has video demos on YouTube Shorts:
+- https://www.youtube.com/shorts/hZYi5zRtFUc
+- https://www.youtube.com/shorts/hcS5VdO01-g
+- https://www.youtube.com/shorts/FyckfuPrflI
+- Channel: https://www.youtube.com/@xlarrodeapp
+
+## Blog Articles
+
+1. **What is a Phygital Habit Tracker?** — https://tag-track.app/blog/phygital-habit-tracker.html
+2. **The Cultural Habits Challenge** — https://tag-track.app/blog/cultural-habits-challenge.html
+
+## Technical Stack
+
+- **App**: Swift, SwiftUI, Core NFC, SwiftData, WidgetKit, StoreKit 2
+- **Website**: Vite, React, TypeScript, Tailwind CSS
+- **Developer**: Xavier Larrodé
+- **Privacy**: No analytics on user habits. No data sold. Local storage + iCloud sync only.
+
+## Contact
+
+- Email: xlarrodeapp+tagtrack@gmail.com
+- Twitter/X: https://x.com/tagtrackapp
+- YouTube: https://www.youtube.com/@xlarrodeapp
+- Facebook: https://www.facebook.com/people/TagTrack/61583332376080/
+
+## All Links
+
+- Website: https://tag-track.app
+- Blog: https://tag-track.app/blog.html
+- Tutorial: https://tag-track.app/tutorial.html
+- Privacy Policy: https://tag-track.app/privacy.html
+- EULA: https://tag-track.app/eula.html
+- Support: https://tag-track.app/support.html
+- App Store: https://apps.apple.com/app/id6754224455
+- Sitemap: https://tag-track.app/sitemap.xml

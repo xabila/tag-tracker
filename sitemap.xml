@@ -1,43 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   <url>
     <loc>https://tag-track.app/</loc>
-    <lastmod>2026-02-07</lastmod>
+    <lastmod>2026-05-03</lastmod>
     <priority>1.00</priority>
+    <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/hZYi5zRtFUc/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>TagTrack - NFC Habit Tracking Demo</video:title>
+      <video:description>See how TagTrack turns everyday objects into habit buttons with NFC tags.</video:description>
+      <video:content_loc>https://www.youtube.com/shorts/hZYi5zRtFUc</video:content_loc>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/hcS5VdO01-g/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>TagTrack - Phygital Habit Tracker</video:title>
+      <video:description>Track your habits by touching real objects. Tap NFC or scan QR codes.</video:description>
+      <video:content_loc>https://www.youtube.com/shorts/hcS5VdO01-g</video:content_loc>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/FyckfuPrflI/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>TagTrack - QR Code Habit Tracking</video:title>
+      <video:description>Print QR codes, stick them anywhere, and scan to log your habits instantly.</video:description>
+      <video:content_loc>https://www.youtube.com/shorts/FyckfuPrflI</video:content_loc>
+    </video:video>
   </url>
   <url>
     <loc>https://tag-track.app/blog.html</loc>
-    <lastmod>2026-02-07</lastmod>
+    <lastmod>2026-05-03</lastmod>
     <priority>0.90</priority>
   </url>
   <url>
     <loc>https://tag-track.app/blog/phygital-habit-tracker.html</loc>
-    <lastmod>2026-02-07</lastmod>
+    <lastmod>2026-05-03</lastmod>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://tag-track.app/blog/cultural-habits-challenge.html</loc>
-    <lastmod>2026-02-07</lastmod>
+    <lastmod>2026-05-03</lastmod>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://tag-track.app/tutorial.html</loc>
-    <lastmod>2025-11-05</lastmod>
+    <lastmod>2026-05-03</lastmod>
     <priority>0.90</priority>
   </url>
   <url>
     <loc>https://tag-track.app/privacy.html</loc>
-    <lastmod>2025-10-24</lastmod>
+    <lastmod>2026-05-03</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://tag-track.app/eula.html</loc>
-    <lastmod>2025-10-24</lastmod>
+    <lastmod>2026-05-03</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://tag-track.app/support.html</loc>
-    <lastmod>2025-10-24</lastmod>
+    <lastmod>2026-05-03</lastmod>
     <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://tag-track.app/llms.txt</loc>
+    <lastmod>2026-05-03</lastmod>
+    <priority>0.50</priority>
+  </url>
+  <url>
+    <loc>https://tag-track.app/llms-full.txt</loc>
+    <lastmod>2026-05-03</lastmod>
+    <priority>0.50</priority>
   </url>
 </urlset>

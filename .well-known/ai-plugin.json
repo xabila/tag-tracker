@@ -1,0 +1,11 @@
+{
+  "schema_version": "v1",
+  "name": "TagTrack",
+  "description": "TagTrack is a phygital habit tracker for iOS. Track your habits by touching real objects with NFC tags or scanning QR codes. Logged in 2 seconds.",
+  "url": "https://tag-track.app",
+  "logo_url": "https://tag-track.app/img/TagTrackAlpha.webp",
+  "contact_email": "xlarrodeapp+tagtrack@gmail.com",
+  "legal_info_url": "https://tag-track.app/privacy.html",
+  "llms_txt": "https://tag-track.app/llms.txt",
+  "llms_full_txt": "https://tag-track.app/llms-full.txt"
+}

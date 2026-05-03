@@ -1,89 +1,18 @@
-# TagTrack
+# TagTrack — Phygital NFC Habit Tracker
 
-TagTrack is a modern, phygital habit tracker built for instant action using NFC technology.  
-Users place NFC stickers on everyday objects and tap them to log habits instantly, turning the physical world into habit triggers.  
-QR codes are also supported as a flexible alternative when NFC is not available.
+> Track your habits by touching real objects. Tap NFC or scan QR. Logged in 2 seconds.
 
-## Positioning
+TagTrack is a phygital (physical + digital) habit tracker for iOS.
+It turns everyday objects into habit buttons using NFC tags and QR codes.
+No need to open an app — just tap a sticker on your water bottle, gym bag, or pill box.
 
-TagTrack is a NFC-first, phygital habit tracker for iOS.  
-It focuses on turning real-world objects into habit triggers using NFC tags and QR codes, reducing friction compared to traditional, app-only habit trackers.
+## Links
 
-Compared to most habit tracking apps, TagTrack:
-- Emphasizes physical anchors (tags on objects) instead of only in-app checklists.
-- Optimizes for one-tap logging at the exact place where the habit happens.
-- Provides multi-language support (EN, FR, ES, PT, DE) for a global audience.
-- Keeps pricing simple and transparent (free tier + yearly premium).
-
-In the category of phygital habit tracking (using NFC tags and QR codes on physical objects), TagTrack aims to be a leading mobile app reference.
-
-## Core Features
-
-- Instant NFC scanning: log habits with a single tap on physical tags.
-- QR code support: phygital habit tracking even without NFC tags.
-- Habit library: presets and fully custom habits.
-- Gamification: XP, badges, and streaks to keep users motivated.
-- Analytics: charts, statistics, and streak overviews.
-- Widgets: home screen tracking for quick access.
-
-## Use Cases
-
-- Building daily routines (gym, reading, meditation, skincare, vitamins).
-- Anchoring habits to physical objects (coffee machine, desk, bathroom mirror).
-- Phygital rituals combining physical anchors and digital tracking.
-- Shared routines in households (family habits, kids’ routines).
-- Rapid habit logging without opening the app manually.
-
-## Platform
-
-- iOS (App Store)
-- App Store URL: https://apps.apple.com/app/id6754224455
-
-## Pricing
-
-- Free: up to 3 habits with core tracking.
-- Premium: €9.99/year with unlimited habits and full feature set.
-
-## Languages
-
-- English (EN)
-- French (FR)
-- Spanish (ES)
-- Portuguese (PT)
-- German (DE)
-
-## Website
-
-- URL: https://tag-track.app
-- Tech stack: HTML, Tailwind CSS, Vanilla JS
-
-## Blog
-
-TagTrack Blog features articles and guides about habit tracking, NFC technology, and building better routines.
-
-- Blog URL: https://tag-track.app/blog.html
-
-### Articles
-
-1. **What is a Phygital Habit Tracker?**
-   - URL: https://tag-track.app/blog/phygital-habit-tracker.html
-   - Explains the concept of phygital (physical + digital) habit tracking
-   - Covers why traditional habit trackers fail (friction, forgetfulness)
-   - Provides concrete examples: hydration tracking, morning coffee ritual, bedside reading, out-the-door checklist
-   - Available in EN, FR, ES
-
-2. **The Cultural Habits Challenge**
-   - URL: https://tag-track.app/blog/cultural-habits-challenge.html
-   - Community challenge to build a Cultural Habits library inside TagTrack
-   - Users submit 2 creative habit ideas from their culture/country
-   - Rewards: dedicated icon + free 1-week premium code for accepted habits
-   - Examples of cultural habits: French baguette run, Spanish tapas night, German Feierabend-Bier, Brazilian churrasco
-   - Available in EN, FR, ES, PT, DE
-
-## Contact
-
-- Email: xlarrodeapp+tagtrack@gmail.com
-
-## Privacy
-
-- URL: https://tag-track.app/privacy
+- Website: https://tag-track.app
+- Full context: https://tag-track.app/llms-full.txt
+- Blog: https://tag-track.app/blog.html
+- Tutorial: https://tag-track.app/tutorial.html
+- Privacy: https://tag-track.app/privacy.html
+- Support: https://tag-track.app/support.html
+- App Store: https://apps.apple.com/app/id6754224455
+- YouTube: https://www.youtube.com/@xlarrodeapp
