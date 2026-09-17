@@ -45,8 +45,8 @@ No need to open an app — just tap a sticker on your water bottle, gym bag, or 
 
 - **Platform**: iOS (iPhone) — Available on the App Store
 - **Download**: https://apps.apple.com/app/id6754224455
-- **Free tier**: Up to 3 habits with core NFC/QR tracking
-- **Pro**: €9.99/year — unlimited habits, advanced stats, premium themes, all widgets
+- **Free tier**: Up to 3 habits with core NFC/QR tracking and widgets
+- **Pro**: yearly App Store subscription (local price; Eurozone example €9.99/year) — unlimited habits, advanced stats, themes
 
 ## Languages
 
