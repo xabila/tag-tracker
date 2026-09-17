@@ -12,6 +12,7 @@
     </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta name="theme-color" content="#1A1A1A">
+    <meta name="apple-itunes-app" content="app-id=6754224455">
     <title>Tutorial – TagTrack</title>
     <meta name="description" content="Learn how to use TagTrack with our step-by-step video tutorial.">
     <link rel="canonical" href="https://tag-track.app/tutorial.html">
@@ -80,6 +81,8 @@
         }
         @keyframes spin { to { transform: rotate(360deg); } }
     </style>
+    <link rel="stylesheet" href="/css/site.css">
+    <script src="/js/site.js"></script>
 </head>
 <body class="bg-background-dark text-slate-100 font-body antialiased min-h-screen flex flex-col">
     
@@ -88,9 +91,16 @@
         <button onclick="goBack()" class="w-10 h-10 rounded-full bg-white/5 hover:bg-white/10 flex items-center justify-center transition-colors mr-4">
             <span class="material-icons-round">arrow_back</span>
         </button>
-        <h1 class="font-display font-bold text-xl">
+        <h1 class="font-display font-bold text-xl flex-1">
             <span class="lang-label lang-en">Tutorial</span>
-            <span class="lang-label lang-fr">Tutoriel</span>            <span class="lang-label lang-es">Tutorial</span>        </h1>
+            <span class="lang-label lang-fr">Tutoriel</span>
+            <span class="lang-label lang-es">Tutorial</span>
+        </h1>
+        <a href="https://apps.apple.com/app/id6754224455" data-ct="tutorial_header" class="tt-header-cta">
+            <span class="lang-label lang-en">Get the App</span>
+            <span class="lang-label lang-fr">Télécharger</span>
+            <span class="lang-label lang-es">Descargar</span>
+        </a>
     </header>
     
     <main class="flex-1 max-w-7xl mx-auto w-full px-4 py-12 flex flex-col items-center">
@@ -108,8 +118,8 @@
             </p>
         </div>
         
-        <div class="relative w-full max-w-[400px] aspect-[9/16] bg-black rounded-[2rem] overflow-hidden border border-white/10 video-glow">
-            <div id="loading" class="absolute inset-0 flex flex-col items-center justify-center space-y-4 z-10 bg-background-dark">
+        <div class="relative w-full max-w-[400px] aspect-[9/16] bg-black rounded-[2rem] overflow-hidden border border-white/10 video-glow tt-play-wrap">
+            <div id="loading" class="absolute inset-0 flex flex-col items-center justify-center space-y-4 z-10 bg-background-dark" style="display: none;">
                 <div class="spinner"></div>
                 <p class="text-slate-500 font-medium">
                     <span class="lang-label lang-en">Loading video...</span>
@@ -117,12 +127,20 @@
                     <span class="lang-label lang-es">Cargando...</span>
                 </p>
             </div>
+
+            <button type="button" id="play-tutorial" class="tt-play-btn" aria-label="Play tutorial">
+                <span class="tt-play-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+                </span>
+                <span>
+                    <span class="lang-label lang-en">Play tutorial</span>
+                    <span class="lang-label lang-fr">Lire le tutoriel</span>
+                    <span class="lang-label lang-es">Ver tutorial</span>
+                </span>
+            </button>
             
-            <video id="tutorial-video" class="w-full h-full object-contain" controls autoplay muted playsinline preload="auto" style="display: none;">
-                <source src="/img/IntroEN-V2.mp4" type="video/mp4">
-            </video>
+            <video id="tutorial-video" class="w-full h-full object-contain" controls playsinline preload="none" poster="/img/ZeroScreen-EN.webp" style="display: none;"></video>
             
-            <!-- Skip controls -->
             <div id="custom-controls" class="absolute bottom-12 left-1/2 -translate-x-1/2 flex gap-4 z-20" style="display: none;">
                 <button onclick="skipBackward()" class="w-14 h-14 rounded-full glass-panel flex flex-col items-center justify-center hover:bg-white/10 transition-all border-white/20">
                     <span class="material-icons-round">replay_10</span>
@@ -133,6 +151,14 @@
             </div>
         </div>
 
+        <div class="tt-tutorial-cta">
+            <a href="https://apps.apple.com/app/id6754224455" data-ct="tutorial_after_video">
+                <span class="lang-label lang-en">Download on the App Store</span>
+                <span class="lang-label lang-fr">Télécharger sur l’App Store</span>
+                <span class="lang-label lang-es">Descargar en App Store</span>
+            </a>
+        </div>
+
     </main>
 
     <footer class="py-8 text-center text-slate-600 text-sm">
@@ -140,29 +166,55 @@
     </footer>
 
     <script>
-        // Detect language
-        const userLang = navigator.language || navigator.userLanguage;
-        const isFrench = userLang.startsWith('fr');
-        const isSpanish = userLang.startsWith('es');
-        const langClass = isFrench ? 'is-lang-fr' : isSpanish ? 'is-lang-es' : 'is-lang-en';
+        const urlParams = new URLSearchParams(window.location.search);
+        const forcedLang = urlParams.get('lang');
+        const userLang = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
+        let currentLang = 'en';
+        if (forcedLang && ['en', 'fr', 'es', 'pt', 'de'].includes(forcedLang)) currentLang = forcedLang;
+        else if (userLang.startsWith('fr')) currentLang = 'fr';
+        else if (userLang.startsWith('es')) currentLang = 'es';
+        else if (userLang.startsWith('pt')) currentLang = 'pt';
+        else if (userLang.startsWith('de')) currentLang = 'de';
+        const langClass = currentLang === 'fr' ? 'is-lang-fr' : currentLang === 'es' ? 'is-lang-es' : 'is-lang-en';
         document.body.classList.add(langClass);
-        
-        const video = document.getElementById('tutorial-video');
-        
-        const videoSrc = isFrench ? '/img/TT-Video_FR.mp4' : isSpanish ? '/img/TT-Video_ES.mp4' : '/img/TTVideo_EN.mp4';
-        video.querySelector('source').src = videoSrc;
 
-        video.addEventListener('loadedmetadata', function() {
-            document.getElementById('loading').style.display = 'none';
+        const video = document.getElementById('tutorial-video');
+        const playBtn = document.getElementById('play-tutorial');
+        const loading = document.getElementById('loading');
+        const posters = {
+            fr: '/img/ZeroScreen-FR.webp',
+            es: '/img/ZeroScreen-ES.webp',
+            pt: '/img/ZeroScreen-PT.webp',
+            de: '/img/ZeroScreen-DE.webp',
+            en: '/img/ZeroScreen-EN.webp'
+        };
+        video.setAttribute('poster', posters[currentLang] || posters.en);
+
+        const videoSrc = currentLang === 'fr' ? '/img/TT-Video_FR.mp4'
+            : currentLang === 'es' ? '/img/TT-Video_ES.mp4'
+            : '/img/TTVideo_EN.mp4';
+
+        function startTutorial() {
+            playBtn.hidden = true;
+            loading.style.display = 'flex';
+            video.src = videoSrc;
             video.style.display = 'block';
-            document.getElementById('custom-controls').style.display = 'flex';
-        });
-        
-        video.load();
-        
+            video.addEventListener('loadedmetadata', function onMeta() {
+                loading.style.display = 'none';
+                document.getElementById('custom-controls').style.display = 'flex';
+                video.play().catch(function () {});
+            }, { once: true });
+            video.load();
+            if (typeof gtag === 'function') {
+                gtag('event', 'select_content', { content_type: 'tutorial_video', item_id: currentLang });
+            }
+        }
+
+        playBtn.addEventListener('click', startTutorial);
+
         function skipBackward() { video.currentTime = Math.max(0, video.currentTime - 10); }
-        function skipForward() { video.currentTime = Math.min(video.duration, video.currentTime + 10); }
-        
+        function skipForward() { video.currentTime = Math.min(video.duration || 0, video.currentTime + 10); }
+
         function goBack() {
             if (window.history.length > 1) {
                 window.history.back();
