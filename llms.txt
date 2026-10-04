@@ -9,6 +9,10 @@ No need to open an app — just tap a sticker on your water bottle, gym bag, or 
 ## Links
 
 - Website: https://tag-track.app
+- Français: https://tag-track.app/fr/
+- Español: https://tag-track.app/es/
+- Português: https://tag-track.app/pt/
+- Deutsch: https://tag-track.app/de/
 - Full context: https://tag-track.app/llms-full.txt
 - Blog: https://tag-track.app/blog.html
 - Tutorial: https://tag-track.app/tutorial.html

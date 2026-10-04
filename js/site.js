@@ -13,7 +13,15 @@
     return;
   }
 
+  function pathLang() {
+    var path = location.pathname || "/";
+    var match = path.match(/^\/(fr|es|pt|de)(?:\/|$)/);
+    return match ? match[1] : "";
+  }
+
   function currentLang() {
+    var fromPath = pathLang();
+    if (fromPath) return fromPath;
     try {
       var params = new URLSearchParams(location.search);
       var forced = (params.get("lang") || "").toLowerCase();
@@ -22,6 +30,15 @@
     var nav = (navigator.language || navigator.userLanguage || "en").toLowerCase();
     var short = nav.split("-")[0];
     return LANGS.indexOf(short) !== -1 ? short : "en";
+  }
+
+  function localeHomePath(lang) {
+    return lang === "en" ? "/" : "/" + lang + "/";
+  }
+
+  function onSpaHome() {
+    var path = location.pathname || "/";
+    return path === "/" || /^\/(fr|es|pt|de)\/?$/.test(path);
   }
 
   var COPY = {
@@ -236,23 +253,14 @@
 
   function onLangButtonClick(event) {
     var btn = event.target.closest("button");
-    if (!btn) return;
+    if (!btn || !onSpaHome()) return;
     var label = (btn.textContent || "").trim().toLowerCase();
     if (LANGS.indexOf(label) === -1) return;
-    try {
-      var url = new URL(location.href);
-      url.searchParams.set("lang", label);
-      history.replaceState({}, "", url);
-      document.documentElement.lang = label;
-    } catch (e) {}
-    setTimeout(function () {
-      var stickyLabel = document.querySelector(".tt-sticky-label");
-      if (stickyLabel) stickyLabel.textContent = t().sticky;
-      var existing = document.getElementById("pricing");
-      if (existing) existing.remove();
-      mountPricing();
-      decorateStoreLinks();
-    }, 50);
+    var target = localeHomePath(label);
+    var here = (location.pathname || "/").replace(/\/$/, "") || "/";
+    var dest = target.replace(/\/$/, "") || "/";
+    if (here === dest && !location.search) return;
+    location.assign(target);
   }
 
   document.addEventListener("click", function (event) {
