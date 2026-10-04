@@ -177,3 +177,56 @@
   font-weight: 700;
   text-decoration: none;
 }
+
+/* Visible before the Vite app replaces #root. */
+.crawl-snapshot {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 7.5rem 1.5rem 3rem;
+  text-align: center;
+  background: #050510;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+.crawl-badge {
+  display: inline-block;
+  margin: 0 0 1rem;
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  background: rgba(247, 32, 156, 0.12);
+  color: #ff5eb5;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+.crawl-snapshot h1 {
+  margin: 0 0 1rem;
+  font-family: "Plus Jakarta Sans", Inter, system-ui, sans-serif;
+  font-size: clamp(2rem, 6vw, 3.25rem);
+  line-height: 1.1;
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: -0.03em;
+}
+.crawl-snapshot h1 span {
+  color: #f7209c;
+}
+.crawl-lead {
+  margin: 0 auto 1.5rem;
+  max-width: 36rem;
+  color: #94a3b8;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+.crawl-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0.75rem 1.25rem;
+  border-radius: 999px;
+  background: #f7209c;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+}

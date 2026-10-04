@@ -52,6 +52,14 @@ No need to open an app — just tap a sticker on your water bottle, gym bag, or 
 
 English, French (Français), Spanish (Español), Portuguese (Português), German (Deutsch)
 
+Each language has its own crawlable home page:
+
+- English: https://tag-track.app/
+- Français: https://tag-track.app/fr/
+- Español: https://tag-track.app/es/
+- Português: https://tag-track.app/pt/
+- Deutsch: https://tag-track.app/de/
+
 ## Video Demos
 
 TagTrack has video demos on YouTube Shorts:

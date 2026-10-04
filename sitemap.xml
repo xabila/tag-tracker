@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://tag-track.app/</loc>
-    <lastmod>2026-05-03</lastmod>
+    <lastmod>2026-10-04</lastmod>
     <priority>1.00</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tag-track.app/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tag-track.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tag-track.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tag-track.app/pt/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tag-track.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tag-track.app/"/>
     <video:video>
       <video:thumbnail_loc>https://img.youtube.com/vi/hZYi5zRtFUc/maxresdefault.jpg</video:thumbnail_loc>
       <video:title>TagTrack - NFC Habit Tracking Demo</video:title>
@@ -23,6 +30,50 @@
       <video:description>Print QR codes, stick them anywhere, and scan to log your habits instantly.</video:description>
       <video:content_loc>https://www.youtube.com/shorts/FyckfuPrflI</video:content_loc>
     </video:video>
+  </url>
+  <url>
+    <loc>https://tag-track.app/fr/</loc>
+    <lastmod>2026-10-04</lastmod>
+    <priority>0.90</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tag-track.app/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tag-track.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tag-track.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tag-track.app/pt/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tag-track.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tag-track.app/"/>
+  </url>
+  <url>
+    <loc>https://tag-track.app/es/</loc>
+    <lastmod>2026-10-04</lastmod>
+    <priority>0.90</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tag-track.app/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tag-track.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tag-track.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tag-track.app/pt/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tag-track.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tag-track.app/"/>
+  </url>
+  <url>
+    <loc>https://tag-track.app/pt/</loc>
+    <lastmod>2026-10-04</lastmod>
+    <priority>0.90</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tag-track.app/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tag-track.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tag-track.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tag-track.app/pt/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tag-track.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tag-track.app/"/>
+  </url>
+  <url>
+    <loc>https://tag-track.app/de/</loc>
+    <lastmod>2026-10-04</lastmod>
+    <priority>0.90</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tag-track.app/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tag-track.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tag-track.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tag-track.app/pt/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tag-track.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tag-track.app/"/>
   </url>
   <url>
     <loc>https://tag-track.app/blog.html</loc>
