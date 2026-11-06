@@ -7,10 +7,10 @@
     <lastmod>2026-05-10</lastmod>
     <priority>1.00</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://tag-track.app/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://tag-track.app/?lang=fr"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://tag-track.app/?lang=es"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://tag-track.app/?lang=pt"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://tag-track.app/?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tag-track.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tag-track.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tag-track.app/pt/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tag-track.app/de/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://tag-track.app/"/>
     <video:video>
       <video:thumbnail_loc>https://img.youtube.com/vi/hZYi5zRtFUc/maxresdefault.jpg</video:thumbnail_loc>
@@ -30,6 +30,26 @@
       <video:description>Print QR codes, stick them anywhere, and scan to log your habits instantly.</video:description>
       <video:content_loc>https://www.youtube.com/shorts/FyckfuPrflI</video:content_loc>
     </video:video>
+  </url>
+  <url>
+    <loc>https://tag-track.app/fr/</loc>
+    <lastmod>2026-05-10</lastmod>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://tag-track.app/es/</loc>
+    <lastmod>2026-05-10</lastmod>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://tag-track.app/pt/</loc>
+    <lastmod>2026-05-10</lastmod>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://tag-track.app/de/</loc>
+    <lastmod>2026-05-10</lastmod>
+    <priority>0.95</priority>
   </url>
   <url>
     <loc>https://tag-track.app/compare.html</loc>
