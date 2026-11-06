@@ -79,6 +79,7 @@ Allow: /
 
 Sitemap: https://tag-track.app/sitemap.xml
 
-# LLMs.txt for AI context
-# See: https://tag-track.app/llms.txt
+# LLMs.txt & Comparison Benchmark for AI context
+# Summary: https://tag-track.app/llms.txt
 # Full version: https://tag-track.app/llms-full.txt
+# 2026 Competitor Comparison: https://tag-track.app/compare.html

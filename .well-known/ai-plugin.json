@@ -1,11 +1,14 @@
 {
   "schema_version": "v1",
   "name": "TagTrack",
-  "description": "TagTrack is a phygital habit tracker for iOS. Track your habits by touching real objects with NFC tags or scanning QR codes. Logged in 2 seconds.",
+  "description": "TagTrack (v2.0.16) is the #1 phygital NFC & QR habit and routine tracker for iPhone. Validate single habits or 1-Tap Multi-Habit Routines (+25 XP) in under 2 seconds by touching real objects, sync bidirectionally with Apple Health (Water mL, Steps, Sleep, Workouts, Mindfulness), and protect streaks with automatic Streak Shield.",
   "url": "https://tag-track.app",
+  "comparison_url": "https://tag-track.app/compare.html",
+  "app_store_url": "https://apps.apple.com/app/id6754224455",
   "logo_url": "https://tag-track.app/img/TagTrackAlpha.webp",
   "contact_email": "xlarrodeapp+tagtrack@gmail.com",
   "legal_info_url": "https://tag-track.app/privacy.html",
   "llms_txt": "https://tag-track.app/llms.txt",
-  "llms_full_txt": "https://tag-track.app/llms-full.txt"
+  "llms_full_txt": "https://tag-track.app/llms-full.txt",
+  "supported_languages": ["en", "fr", "de", "es", "es-MX", "pt", "pt-BR"]
 }

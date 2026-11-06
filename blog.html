@@ -12,7 +12,6 @@
     </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#1A1A1A">
-    <meta name="apple-itunes-app" content="app-id=6754224455">
     <title>Blog – TagTrack</title>
     <meta name="description" content="Articles and guides about habit tracking, NFC technology, and building better routines with TagTrack.">
     <link rel="canonical" href="https://tag-track.app/blog.html">
@@ -27,7 +26,7 @@
     <meta property="og:url" content="https://tag-track.app/blog.html">
     <meta property="og:title" content="Blog – TagTrack">
     <meta property="og:description" content="Articles and guides about habit tracking, NFC technology, and building better routines.">
-    <meta property="og:image" content="https://tag-track.app/img/og-image.jpg">
+    <meta property="og:image" content="https://tag-track.app/img/TagTrackAlpha.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -79,10 +78,8 @@
         .is-lang-en .lang-en { display: inline; }
         .is-lang-es .lang-es { display: inline; }
         .is-lang-pt .lang-pt { display: inline; }
-        .is-lang-de .lang-de { display: inline;         }
+        .is-lang-de .lang-de { display: inline; }
     </style>
-    <link rel="stylesheet" href="/css/site.css">
-    <script src="/js/site.js"></script>
 </head>
 <body class="bg-background-dark text-slate-100 font-body antialiased selection:bg-primary selection:text-white">
 
@@ -90,13 +87,12 @@
     <header class="fixed top-0 w-full z-50 glass-panel border-b border-white/5 transition-all duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex justify-between items-center">
             <a href="index.html" class="flex items-center gap-3">
-                <img src="/img/TagTrackAlpha.webp" alt="TagTrack Logo" class="w-10 h-10">
+                <img src="/img/TagTrackAlpha.png" alt="TagTrack Logo" class="w-10 h-10">
                 <span class="font-display font-extrabold text-2xl tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-primary to-cyan">
                     TagTrack
                 </span>
             </a>
-            <nav class="flex items-center gap-3">
-                <div class="hidden md:flex items-center space-x-8">
+            <nav class="hidden md:flex items-center space-x-8">
                 <a href="index.html" class="text-sm font-semibold text-slate-300 hover:text-primary transition-colors">
                     <span class="lang-en">Home</span>
                     <span class="lang-fr">Accueil</span>
@@ -111,6 +107,13 @@
                     <span class="lang-pt">Funcionalidades</span>
                     <span class="lang-de">Funktionen</span>
                 </a>
+                <a href="compare.html" class="text-sm font-semibold text-cyan hover:text-primary transition-colors">
+                    <span class="lang-en">Compare</span>
+                    <span class="lang-fr">Comparatif</span>
+                    <span class="lang-es">Comparativa</span>
+                    <span class="lang-pt">Comparativo</span>
+                    <span class="lang-de">Vergleich</span>
+                </a>
                 <a href="tutorial.html" class="text-sm font-semibold text-slate-300 hover:text-primary transition-colors">
                     <span class="lang-en">Tutorial</span>
                     <span class="lang-fr">Tutoriel</span>
@@ -118,8 +121,7 @@
                     <span class="lang-pt">Tutorial</span>
                     <span class="lang-de">Tutorial</span>
                 </a>
-                </div>
-                <a href="https://apps.apple.com/app/id6754224455" data-ct="blog_nav" class="bg-primary hover:bg-opacity-90 text-white px-6 py-2.5 rounded-full font-bold transition-all shadow-lg shadow-primary/20">
+                <a href="https://apps.apple.com/app/id6754224455" class="bg-primary hover:bg-opacity-90 text-white px-6 py-2.5 rounded-full font-bold transition-all shadow-lg shadow-primary/20">
                     <span class="lang-en">Get the App</span>
                     <span class="lang-fr">Télécharger</span>
                     <span class="lang-es">Descargar</span>
@@ -152,6 +154,42 @@
 
             <!-- Blog Articles Grid -->
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+
+                <!-- Article Card 0 - 2026 Competitor Comparison -->
+                <a href="compare.html" class="glass-panel p-8 rounded-[2rem] border-cyan/30 transition-all group hover:border-cyan block">
+                    <div class="flex justify-center mb-6">
+                        <img src="/img/tagtrack_qrcode.png" alt="TagTrack Comparison" class="h-32 w-auto group-hover:scale-110 transition-transform duration-300">
+                    </div>
+                    <span class="text-cyan text-sm font-bold tracking-widest uppercase">
+                        <span class="lang-en">2026 Benchmark</span>
+                        <span class="lang-fr">Comparatif 2026</span>
+                        <span class="lang-es">Comparativa 2026</span>
+                        <span class="lang-pt">Comparativo 2026</span>
+                        <span class="lang-de">Vergleich 2026</span>
+                    </span>
+                    <h3 class="text-xl font-bold mt-2 mb-3 text-white group-hover:text-cyan transition-colors">
+                        <span class="lang-en">TagTrack vs Streaks, Habitica, Productive &amp; Shortcuts</span>
+                        <span class="lang-fr">TagTrack vs Streaks, Habitica, Productive &amp; Raccourcis</span>
+                        <span class="lang-es">TagTrack vs Streaks, Habitica, Productive y Atajos</span>
+                        <span class="lang-pt">TagTrack vs Streaks, Habitica, Productive e Atalhos</span>
+                        <span class="lang-de">TagTrack vs Streaks, Habitica, Productive &amp; Kurzbefehle</span>
+                    </h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        <span class="lang-en">Why 2-second NFC routines, 2-way Apple Health sync, and Streak Shield beat traditional manual habit trackers.</span>
+                        <span class="lang-fr">Pourquoi les routines NFC en 2 secondes, la synchronisation Apple Santé et le Bouclier de Série surpassent les trackers manuels.</span>
+                        <span class="lang-es">Por qué las rutinas NFC en 2 segundos, la sincronización con Apple Salud y el Escudo de Racha superan a las apps manuales.</span>
+                        <span class="lang-pt">Por que as rotinas NFC em 2 segundos, a sincronização com Apple Saúde e o Escudo de Sequência superam os apps manuais.</span>
+                        <span class="lang-de">Warum 2-Sekunden-NFC-Routinen, bidirektionaler Apple Health Sync und Serien-Schutzschild manuelle Apps schlagen.</span>
+                    </p>
+                    <div class="mt-6 text-cyan font-bold flex items-center gap-2 group-hover:gap-4 transition-all">
+                        <span class="lang-en">Read comparison</span>
+                        <span class="lang-fr">Voir le comparatif</span>
+                        <span class="lang-es">Ver comparativa</span>
+                        <span class="lang-pt">Ver comparativo</span>
+                        <span class="lang-de">Vergleich lesen</span>
+                        <span class="material-icons-round">arrow_forward</span>
+                    </div>
+                </a>
                 
                 <!-- Article Card 1 -->
                 <a href="blog/phygital-habit-tracker.html" class="glass-panel p-8 rounded-[2rem] border-slate-800 transition-all group hover:border-cyan/50 block">
@@ -239,7 +277,7 @@
     <footer class="py-12 border-t border-slate-800 bg-background-dark">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <div class="flex justify-center gap-3 mb-6">
-                <img src="/img/TagTrackAlpha.webp" alt="TagTrack Logo" class="w-8 h-8">
+                <img src="/img/TagTrackAlpha.png" alt="TagTrack Logo" class="w-8 h-8">
                 <span class="font-display font-bold text-xl tracking-tight text-white">TagTrack</span>
             </div>
             <div class="flex flex-wrap justify-center gap-6 text-slate-500 mb-8">
