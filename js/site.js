@@ -235,14 +235,20 @@
     faq.parentNode.insertBefore(section, faq);
   }
 
+  function prerenderPending() {
+    // The home ships a static snapshot of the app (tools/prerender) that React
+    // replaces on boot. Wait for the live app before touching #faq/#pricing.
+    return !!document.querySelector("#root [data-tt-prerender]");
+  }
+
   function waitForFaq(tries) {
     if (!isSpa) return;
-    if (document.getElementById("faq")) {
+    if (document.getElementById("faq") && !prerenderPending()) {
       mountPricing();
       decorateStoreLinks();
       return;
     }
-    if (tries > 40) return;
+    if (tries > 80) return;
     setTimeout(function () { waitForFaq(tries + 1); }, 150);
   }
 
