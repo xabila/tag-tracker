@@ -1,0 +1,7 @@
+{
+  "name": "tagtrack-prerender",
+  "private": true,
+  "description": "Build-time prerender of the TagTrack home pages (see prerender.cjs)",
+  "scripts": { "prerender": "node prerender.cjs" },
+  "dependencies": { "puppeteer-core": "^24.0.0" }
+}
